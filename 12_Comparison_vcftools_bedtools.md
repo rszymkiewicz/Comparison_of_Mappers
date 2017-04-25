@@ -1,4 +1,4 @@
- # Data Comparison using *vcftools* and *bedtools*  
+# Data Comparison using *vcftools* and *bedtools*  
 
 ## Commands and Parameters  
 ### Tabix 
