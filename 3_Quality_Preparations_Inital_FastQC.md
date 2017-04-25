@@ -18,7 +18,7 @@ fastqc [Forward_Strand.fastq] -o [output_folder_path]
 fastqc [Reverse_Strand.fastq] -o [output_folder_path]
 ```  
 Parameter | Description  
------------------------  
+----------|-------------  
 -o | *flag indicating the output folder path which will contain all output files including the html file*  
 
 ### FastQC Analysis - Sample P750
