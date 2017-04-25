@@ -1,4 +1,4 @@
-# Quality Preparations  
+# Quality Preparations - Trimming of Adapters and Low Quality Sequences
 
 After assessing the inital quality of our sequencing samples we must take the appropriate steps to improve the quality of each sample to aid in sequence analysis. We will now quality trim our samples using a bioinformatic tool called ***Trimmomatic***.
 
@@ -7,6 +7,13 @@ After assessing the inital quality of our sequencing samples we must take the ap
 Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
 
 Trimmomatic is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
+
+Trimmomatic has two methods to to trim sequence reads:  
+1.  Simple Trimming 
+- The adaptor sequence is compared to the read and if it matches the minimum match threshold it is removed from the read.
+2.  Palindrome Trimming
+- Designed for 'reading-through' a short fragment into the adaptor sequence on the other end. 
+- The forward read is clipped of the adaptor sequence however the reverse read is dropped as it provides no further information. 
 
 Trimmomatic requires two input fastq files (forward and reverse per sample). There are a total of 4 output files produced by the trimmomatic paired-end feature. There are a total of two paired-end output files which contain the surviving paired reads output for each strand independently as well as two unpaired output files which contain the reads which were unable to match to the subsequent strand but survived the trimming process.  
 
@@ -22,6 +29,7 @@ Parameter | Description
 PE | *flag indicating Paired-end analysis*
 -threads | *total number of computational power accessible for the software program to use.*  
 -trimlog | *flag indicating the output text file containing a detailed log of all components trimmed.*  
+--phred33 | *flag indicating the conversion of quality output to phred33*
 **Adaptor Trimming**
 ILLUMINACLIP | *flag indicating the fasta file containing the adapters to be removed.*  
 ILLUMINACLIP:**2**:30:10| *The **first number** is the seedMismatches parameter which indicates the maximum mismatch count possible to be included upond trimming.*  
