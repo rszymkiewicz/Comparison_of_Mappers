@@ -81,4 +81,4 @@ TrimmomaticPE: Completed successfully
 
 # Python Script - Trimmomatic 
 
-# Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](http:github.com/rszymkiewicz/Comparison_of_Mappers/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
+# Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
