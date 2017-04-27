@@ -26,3 +26,5 @@ analysis versus *de novo approach* is to compare unknown samples with the closes
  - 165X Coverage
  - 3 contigs
  - 66.46% GC content
+
+# Now that we know a bit more about our sample set and reference sequence lets begin by assessing the quality of our Illumina sample sequences using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).
