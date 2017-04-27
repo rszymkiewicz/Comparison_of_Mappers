@@ -8,6 +8,7 @@ Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer f
 
 Trimmomatic is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
 
+
 Trimmomatic has two methods to to trim sequence reads:  
 1.  Simple Trimming 
 - The adaptor sequence is compared to the read and if it matches the minimum match threshold it is removed from the read.
@@ -19,9 +20,10 @@ Trimmomatic requires two input fastq files (forward and reverse per sample). The
 
 The command contains both adapter timming components and quality trimming components. The adaptor trimming component is defined by the ILLUMINACLIP parameter whereas the quality trimming components consist of the LEADING, TRAILING, SLIDINGWINDOW, and MINLEN parameters as described below.  
 
+
 ### Trimmomatic Code and Parameters
 ```javascript
-java -jar trimmomatic.jar PE -threads 12 -trimlog [.txt] [R1.fastq][R2.fastq] [forward_paired.fastq.gz][forward_unpaired.fastq.gz] [reverse_paired.fastq.gz][reverse_unpaired.fastq.gz] ILLUMINACLIP:/home/rachelle/bin/trimmomatic-master/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:3
+java -jar trimmomatic.jar PE -threads 12 -trimlog [.txt] [R1.fastq][R2.fastq] [forward_paired.fastq.gz][forward_unpaired.fastq.gz] [reverse_paired.fastq.gz][reverse_unpaired.fastq.gz] ILLUMINACLIP:/home/rachelle/bin/trimmomatic-master/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```    
 
 Parameter | Description  
@@ -43,17 +45,40 @@ SLIDINGWINDOW:4:**15** |  *removes bases where the average quality of that base 
 MINLEN | *removes reads which fall below the minimum number of bases per read (read length) threshold indicated by the number (3).*  
 
 ### Trimmomatic Analysis - Sample P750
+The trimmomatic code above was used to perform adapter and quality trimming of Sample P750. The code states that we chose to remove Nextera adapter sequences, bases which had quality less than 3, those bases where the average quality of 4-bases wide was less than 15, as well as any reads less than 36 bases in length.  
 
 #### Trimmomatic Log Output
 The trimmomatic log output text file contains the following components: read name, suriving sequence length, location of first surviving base, location of last surviving base, and the amount trimmed from the end. All components are separated by a colon.  
 
-Remove adapters (ILLUMINACLIP:TruSeq3-PE.fa:2:30:10)
-Remove leading low quality or N bases (below quality 3) (LEADING:3) minimum quality required to keep a base (same for below)
-Remove trailing low quality or N bases (below quality 3) (TRAILING:3)
-Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15 (SLIDINGWINDOW:4:15)
-Drop reads below the 36 bases long (MINLEN:36)
+To view the log output file created use the following code ```more [log_output_file name]``` to view the entire log output file or ```head [log_output_file_name]``` where the first 10 lines of the file are available as screen output.   
 
-# Python Script
-## Trimmomatic 
+The first 10 lines of the log output file for Sample P750 is outlined below. We obtained this output by using the command ```head 
+LOG_P750_raw_phred33```
 
-# Lets varify our quality and adapter trimming was successful and makes practical sense by using FastQC again.  
+```
+==> LOG_P750_raw_phred33_2017April26 <==
+HWI-1KL153:71:H9EA6ADXX:2:1101:2421:1913 1:N:0:GCTACGCTCTAAGCCT 56 0 56 95
+HWI-1KL153:71:H9EA6ADXX:2:1101:2421:1913 2:N:0:GCTACGCTCTAAGCCT 151 0 151 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:3008:1954 1:N:0:GCTACGCTCTAAGCCT 123 0 123 28
+HWI-1KL153:71:H9EA6ADXX:2:1101:3008:1954 2:N:0:GCTACGCTCTAAGCCT 0 0 0 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:5208:1883 1:N:0:GCTACGCTCTAAGCCT 150 1 151 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:5208:1883 2:N:0:GCTACGCTCTAAGCCT 151 0 151 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:5020:1893 1:N:0:GCTACGCTCTAAGCCT 150 1 151 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:5020:1893 2:N:0:GCTACGCTCTAAGCCT 139 0 139 12
+HWI-1KL153:71:H9EA6ADXX:2:1101:5523:1877 1:N:0:GCTACGCTCTAAGCCT 150 1 151 0
+HWI-1KL153:71:H9EA6ADXX:2:1101:5523:1877 2:N:0:GCTACGCTCTAAGCCT 0 0 0 0
+```
+
+#### Trimmomatic Screen Output
+```
+Input Read Pairs: 1350885   
+Both Surviving: 756928 (56.03%)   
+Forward Only Surviving: 572214 (42.36%)   
+Reverse Only Surviving: 8571 (0.63%)   
+Dropped: 13172 (0.98%)  
+TrimmomaticPE: Completed successfully  
+```
+
+# Python Script - Trimmomatic 
+
+# Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](http:github.com/rszymkiewicz/Comparison_of_Mappers/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
