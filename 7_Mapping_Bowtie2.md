@@ -39,7 +39,7 @@ Parameter | Description
 -2 | *flag indicating the reverse strand as an input file in fastq format.*  
 -S | *flag indicating the output file in sam format.*  
 --phred33 | *flag indicating sample file inputs are of the latest Illumina pipelines at phred quality 33.*
---no-unal |  
+--no-unal | *flag utilized for sam file output option; not to include reads which did not align to reference sequence.*  
 --no-mixed | *flag indicating that Bowtie2 will only search for paired-end alignment and not used unpaired alignments from individual strands.*  
 
 ***Default Bowtie2 settings have *sensitive* preset parameters which allows for more accurate and sensitive results.***  
@@ -47,8 +47,8 @@ Parameter | Description
 
 Default Parameter | Description  
 ------------------|------------
--D | 
--R | 
+-D | *flag indicating the number of seed extension attempts to identify the best alignment of a read to the reference sequence ('total number of failures') prior to obtaining a new read to align. A failure is defined as being unable to exceed the current best alignment score.*  
+-R | *flag indicating re-seeding reads with repetitive seeds. Reads have repetitive seeds when the total number of seed hits divided by the number of seeds which aligned at least once is greater than 300.*  
 -L | *flag indicating the length of seed substring for multiseed alignment.*  
 -i | *flag indicating the interval between seed substrings for multiseed alignment.*  
 
