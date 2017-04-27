@@ -30,4 +30,4 @@ In the case of Sample P750, all Nextera XT Illumina Library Kit sequences have b
 
 # Python Script - FastQC Quality Check Post Trimming
 
-# Now that we have confidence in our sample sequences we can continue moving forward with our analysis. Lets look further into performing mapping.   
+# Now that we have confidence in our sample sequences we can continue moving forward with our analysis. Lets look further into performing [*mapping*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/6_Mapping.md) of our samples to our reference sequence.   
