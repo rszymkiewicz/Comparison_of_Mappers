@@ -14,7 +14,7 @@ For our purposes, we will be using the mpileup feature within the samtools suite
 
 ## Commands and Parameters  
  
-### ***samtools Library Index***
+ ### ***samtools Library Index***
 ```
 samtools faidx [reference file in fasta format]
 ``` 
@@ -24,7 +24,7 @@ samtools faidx [reference file in fasta format]
 ```
 samtools mpileup -vf [reference file in fasta format] [sample file in sorted bam format] | bcftools call -vmO z -o [output file in vcf gzipped format]
 ```  
-Tool | Command | Parameter | Description  
+#Tool | Command | Parameter | Description  
 ----|---------|-----------|------------  
 samtools | mpileup | -v | *variant calling format (vcf).*  
 | | | -f | *flag indicating reference file in fasta format.*
@@ -78,3 +78,4 @@ $ | *indicates the ***end*** of a read.*
 
 # Python Script
 
+# Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md).
