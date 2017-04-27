@@ -1,4 +1,3 @@
-
 # Quality Preparation of Whole Genome Sequences
 
 Checking for good quality sequences is the first component of sequence analysis.  
@@ -42,7 +41,7 @@ Looking at our specific sample MDR36 we can focus on specific areas to evaluate 
 *Adaptor Content* is a linear graph presenting the adapter sequences found present within the input sample. The FastQC tool 
 has the ability to detect 4 types of adapter sequences including the Nextera Transposase Sequence. In our sample set, the sequencing facility utilizes a Nextera Library Kit therefore it is possible to see Nextera adapter sequences post sequencing. Adapter libraries should be removed in quality analysis.  
 
-![Adapter_Content](Full path of image)  
+![Adapter Content](/media/sdc/P750_Github/P750_R2_adaptercontent_fastqc_before.png)
 
 ***Analysis***  
 
