@@ -58,4 +58,4 @@ Both the forward and reverse strands have presence of adapter sequences. As the 
 # Python Scripts
 ## FastQC Quality Check - Python Script
 
-# Now that we have assessed our raw sample reads lets perform the appropriate trimming of our samples using [Trimmomatic](Comparison_of_Mappers/4_Quality_Preparations_Trimmomatic.md).
+# Now that we have assessed our raw sample reads lets perform the appropriate trimming of our samples using [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/edit/master/4_Quality_Preparations_Trimmomatic.md).
