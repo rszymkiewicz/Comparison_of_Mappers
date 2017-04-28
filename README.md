@@ -1,2 +1,17 @@
-# Comparison_of_Mappers
-Bio709: Independent Project Winter 2017
+# Comparison of Mappers
+Bio709: Independent Project Winter 2017  
+*Rachelle Szymkiewicz*
+
+## Links to Tutorial Pages
+1. [Overview of Project](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/1_Overview_of_Project.md)  
+2. [Sample Background Information](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/2_Sample_Background.md)  
+3. [Quality Preparations: Initial FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md)  
+4. [Quality Preparations: Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md)  
+5. [Quality Preparations: FastQC Post-Trimming](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/5_Quality_Preparations_FastQC_CheckAfterTrimming.md)  
+6. [Mapping](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/6_Mapping.md)  
+7. [Mapping: Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md)  
+8. [Mapping: BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md)  
+9. [Variant Calling](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md)  
+10. [Variant Calling: samtools and bcftools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling_Samtools_Bedtools.md)  
+11. [Comparison](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md)  
+12. [Comparison: samtools, vcftools, bcftools, and bedtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison_vcftools_bedtools.md)
