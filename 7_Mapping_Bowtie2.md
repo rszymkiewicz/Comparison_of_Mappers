@@ -69,11 +69,12 @@ Multiseed full-index search: 00:01:03
       38250 (43.57%) aligned discordantly 1 time
 93.46% overall alignment rate
 Time searching: 00:01:04
-Overall time: 00:01:04```  
+Overall time: 00:01:04
+```  
 
 Mapping of the 756,928 reads of the Sample P750 to the reference sequence using Bowtie2 (see above command) produced an **overall alignment of 93.46%**. Bowtie2 alignment is broken down into three categories: concordant, discordant, and those reads which did not align at all or aligned indivdiually. In the P750 Sample, there are a total of 669,146 reads (651,108 + 18,038) which align to the reference concordantly (88.40%). Of the reads which did not align in a concordant manner (87782 reads), 38250 of the 87782 reads aligned discordantly (43.5%). The remaining reads are the reads which did not align as paired-ends therefore; they aligned as single reads or may not have aligned at all to the reference. A total of 49,532 reads fall into this category: total - concordant - discordant (756,928 - 669,146 - 38250). To determine the overall alignment because this is paired-end alignment, we must multiple our reads by 2 to represent each strand. The overall alignment is calculated by twice the number of concordant aligned reads plus twice the number of discordant number of aligned reads divided twice the total number of reads from the sample (((2 x 669146) + (2 x 38250))/1513856).
 
-***Bowtie2 Sam Output*** 
+***Bowtie2 Sam Output***  
 The *sam file* for paired-end alignment has information for each strand of the pair on an individiual line. The first line represensts the alignment for the forward strand whereas the second line represents the alignment of the reverse strand. The *sam file* has multiple fields however; the RNEXT and PNEXT fields contain information pertaining to the paired-end alignment specifically the reference name and position to which the other strand aligned to the reference sequence. 
 
 Field # | Description  
