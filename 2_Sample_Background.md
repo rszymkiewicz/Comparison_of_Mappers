@@ -22,9 +22,9 @@ PacBio sequencing is said to be the golden standard in genomic
 sequencing. The purpose of utilizing a reference sequence in 
 analysis versus *de novo approach* is to compare unknown samples with the closest well defined (annotated) sample possible. In our case, the P749 PacBio sequenced sample will be utilized as our reference sequence throughout the analysis process of these 206 PES samples as it is at the highest standard of genomic sequencing. Details pertaining to the P749 PacBio Sequence can be seen in below.  
 ***P749 PacBio Sequence***
- - 64 216 632 bp
- - 165X Coverage
+ - 64 216 632 bp 
+ - 165X Coverage 
  - 3 contigs
  - 66.46% GC content
 
-# Now that we know a bit more about our sample set and reference sequence lets begin by assessing the quality of our Illumina sample sequences using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).
+## Now that we know a bit more about our sample set and reference sequence lets begin by assessing the quality of our Illumina sample sequences using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).
