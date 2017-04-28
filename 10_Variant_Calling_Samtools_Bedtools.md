@@ -13,8 +13,7 @@ Li H A statistical framework for SNP calling, mutation discovery, association ma
 For our purposes, we will be using the mpileup feature within the samtools suite followed by the bedtools stats command in order to create a pileup of reads which aligned to a specific reference sequence  and statistical information which can be used for variant calling analysis.  
 
 ## Commands and Parameters  
- 
- ### ***samtools Library Index***
+### ***samtools Library Index***
 ```
 samtools faidx [reference file in fasta format]
 ``` 
@@ -62,20 +61,19 @@ VCF/BCF Feature | Description
 ---------------|-------------  
 . | ***match to reference*** *forward strand*.  
 , | ***match to reference*** *reverse strand*.  
-> or < | ***reference skip*** .  
+```> or <``` | ***reference skip***.  
 ACGTN | ***mismatch to reference*** *forward strand*.  
 acgtn | ***mismatch to reference*** *reverse strand*.  
-\\+[0-9]+[ACGTNacgtn]+ | ***insertion between reference positons***  
-\\+**[0-9]**+[ACGTNacgtn]+ | *length of insertion represented by the integer provided.*  
-\\+[0-9]+**[ACGTNacgtn]**+ | *identified insertion sequence.*
-`*` | ***deletion from the reference***. 
+```\\+[0-9]+[ACGTNacgtn]+``` | ***insertion between reference positons***.  
+```\\+**[0-9]**+[ACGTNacgtn]+``` | *length of insertion represented by the integer provided.*   
+```\\+[0-9]+**[ACGTNacgtn]**+``` | *identified insertion sequence.*  
+`*` | ***deletion from the reference***.  
 ^ | *indicates the ***start*** of a read.*  
 $ | *indicates the ***end*** of a read.*  
-^ **#** | *indicates the mapping quality in ASCII format.*  Note: must subtract 33 from this integer to obtain the true mapping quality. 
-
+^ **#** | *indicates the mapping quality in ASCII format.*  Note: must subtract 33 from this integer to obtain the true mapping quality.  
 ## samtools and bedtools Analysis - Sample P750
 
 
 # Python Script
 
-# Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md).
+## Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md).
