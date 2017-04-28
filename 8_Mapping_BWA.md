@@ -34,4 +34,4 @@ Parameter | Description
 
 # Python Script - Mapping with BWA
 
-### Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md).   
+## Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md).   
