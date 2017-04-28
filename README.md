@@ -2,7 +2,7 @@
 Bio709: Independent Project Winter 2017  
 *Rachelle Szymkiewicz*
 
-Lets begin our tutorial with an overview of the [project goals and objectives](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/1_Overview_of_Project.md).  
+Lets begin our tutorial with an overview of the [project aims and objectives](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/1_Overview_of_Project.md).  
 A list of all tutorial pages can be found below if one desires to skip to a specific page.  
 
 ## Links to Tutorial Pages
