@@ -22,7 +22,7 @@ Bowtie2 mapping and analysis will be performed on Sample P750. A python script w
 ## Commands and Parameters  
 ### *Library Preparation*
 ```  
-https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.mdbowtie2-build [reference file in fasta format] [prefix of library] 
+bowtie2-build [reference file in fasta format] [prefix of library] 
 ```  
 
 ```bowtie2-build``` is a wrapper script which has the ability to index reference genomes of various sizes. Small indexes are build with *.bt2 file extension* whereas large indexes are build with *.bt21 file extension*.
