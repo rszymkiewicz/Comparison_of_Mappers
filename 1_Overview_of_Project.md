@@ -24,3 +24,5 @@ Specifically, I will use this pipeline to assess 206 Prairie Epidemic Strains (P
 	B. Variant Calling
 		1. Total number of SNPs and indels identified by the mapper tool.
 		2. Dissimilarities between SNP and indel calls between the two mapping tools.
+
+The project tutorial will begin with gaining some information about the selected Illumina sequencing [sample set](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/2_Sample_Background.md).
