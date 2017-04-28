@@ -19,7 +19,6 @@ If each strand as a unique alignment and the pairs do not align they represent a
 
 Bowtie2 mapping and analysis will be performed on Sample P750. A python script will be used to perform bowtie2 mapping on all trimmed samples of the data set. The python script can be found at the bottom of the page.
 
-
 ## Commands and Parameters  
 ### *Library Preparation*
 ```  
@@ -27,6 +26,7 @@ https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.
 ```  
 
 ```bowtie2-build``` is a wrapper script which has the ability to index reference genomes of various sizes. Small indexes are build with *.bt2 file extension* whereas large indexes are build with *.bt21 file extension*.
+
 ### *Mapping*
 ```
 bowtie2 -t -p 10 -x [prefix of library] -1 [Forward Paired fastq file] -2 [Reverse Paired fastq file] -S [Sam file output] --phred33 --no-unal --no-discordant --no-mixed
@@ -54,7 +54,7 @@ Default Parameter | Description
 -i | *flag indicating the interval between seed substrings for multiseed alignment.*  
 
 ## Bowtie2 Analysis - Sample P750
-*** Bowtie2 Alignment Summary***
+***Bowtie2 Alignment Summary***
 
 
 ***Bowtie2 Sam Output*** 
@@ -64,6 +64,6 @@ Field # | Description
 ---------|------------  
 2 | *describes the paired-end nature of read and alignment*
 
-# Python Script
+# Python Script - Bowtie2 Mapping
 
-# Now lets try using [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) to map our samples to our reference sequence.
+## Now lets try using [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) to map our samples to our reference sequence.
