@@ -1,5 +1,4 @@
 # Quality Preparation of Whole Genome Sequences
-
 Checking for good quality sequences is the first component of sequence analysis.  
 Quality checking can be performed through the evaluation of raw sequences. To do this, programs can be used to identify potential areas of uncertainty specifically surrounding both the sequencer (equipment error) and the library material (human error) which may have contributed to the final error rate. It is essential to investigate the quality of sequences, as the biological outcomes will be affected by each step of analysis, beginning with the raw sample. 
 
@@ -19,7 +18,6 @@ fastqc [Reverse_Strand.fastq] -o [output_folder_path]
 Parameter | Description  
 ----------|-------------  
 -o | *flag indicating the output folder path which will contain all output files including the html file*  
-
 ### FastQC Analysis - Sample P750
 Looking at our specific sample (Sample P750) we can focus on specific areas to evaluate in order to assess aspects which require quality trimming. Here we will look at 3 specific areas of analysis; *Basic Statistics*, *Per base sequence quality*, and *Adapter Content*.  
 
@@ -55,7 +53,7 @@ has the ability to detect 4 types of adapter sequences including the Nextera Tra
 ***Analysis***  
 Both the forward and reverse strands have presence of adapter sequences. As the Nextera XT was used for sequencing this sample set it is natural to see Nextera sequencing appear in the adapter content section of the FastQC analysis. This adapter sequence must be removed prior to completing downstream analysis.   
 
-# Python Scripts
-## FastQC Quality Check - Python Script
+# Python Script - FastQC Inital Quality Check
 
-# Now that we have assessed our raw sample reads lets perform the appropriate trimming of our samples using [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).
+
+## Now that we have assessed our raw sample reads lets perform the appropriate trimming of our samples using [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).
