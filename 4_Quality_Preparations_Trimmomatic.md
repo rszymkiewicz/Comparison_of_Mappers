@@ -6,13 +6,13 @@ After assessing the inital quality of our sequencing samples we must take the ap
 **Trimmomatic**:  
 Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
 
-Trimmomatic is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
+**Trimmomatic** is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
 
 
 Trimmomatic has two methods to to trim sequence reads:  
-1.  Simple Trimming 
+1.  ***Simple Trimming*** 
 - The adaptor sequence is compared to the read and if it matches the minimum match threshold it is removed from the read.
-2.  Palindrome Trimming
+2.  ***Palindrome Trimming***
 - Designed for 'reading-through' a short fragment into the adaptor sequence on the other end. 
 - The forward read is clipped of the adaptor sequence however the reverse read is dropped as it provides no further information. 
 
@@ -47,7 +47,7 @@ MINLEN | *removes reads which fall below the minimum number of bases per read (r
 ### Trimmomatic Analysis - Sample P750
 The trimmomatic code above was used to perform adapter and quality trimming of Sample P750. The code states that we chose to remove Nextera adapter sequences, bases which had quality less than 3, those bases where the average quality of 4-bases wide was less than 15, as well as any reads less than 36 bases in length.  
 
-#### Trimmomatic Log Output
+#### *Trimmomatic Log Output*
 The trimmomatic log output text file contains the following components: read name, suriving sequence length, location of first surviving base, location of last surviving base, and the amount trimmed from the end. All components are separated by a colon.  
 
 To view the log output file created use the following code ```more [log_output_file name]``` to view the entire log output file or ```head [log_output_file_name]``` where the first 10 lines of the file are available as screen output.   
@@ -69,7 +69,7 @@ HWI-1KL153:71:H9EA6ADXX:2:1101:5523:1877 1:N:0:GCTACGCTCTAAGCCT 150 1 151 0
 HWI-1KL153:71:H9EA6ADXX:2:1101:5523:1877 2:N:0:GCTACGCTCTAAGCCT 0 0 0 0
 ```
 
-#### Trimmomatic Screen Output
+#### *Trimmomatic Screen Output*
 ```
 Input Read Pairs: 1350885   
 Both Surviving: 756928 (56.03%)   
@@ -81,4 +81,4 @@ TrimmomaticPE: Completed successfully
 
 # Python Script - Trimmomatic 
 
-# Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
+## Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
