@@ -20,7 +20,6 @@ Trimmomatic requires two input fastq files (forward and reverse per sample) when
 
 The command contains both adapter timming components and quality trimming components. The adaptor trimming component is defined by the ILLUMINACLIP parameter whereas the quality trimming components consist of the LEADING, TRAILING, SLIDINGWINDOW, and MINLEN parameters as described below.  
 
-
 ### Trimmomatic Code and Parameters
 ```javascript
 java -jar trimmomatic.jar PE -threads 12 -trimlog [.txt] [R1.fastq][R2.fastq] [forward_paired.fastq.gz][forward_unpaired.fastq.gz] [reverse_paired.fastq.gz][reverse_unpaired.fastq.gz] ILLUMINACLIP:/home/rachelle/bin/trimmomatic-master/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
@@ -82,12 +81,15 @@ Reverse Only Surviving: 8571 (0.63%)
 Dropped: 13172 (0.98%)  
 TrimmomaticPE: Completed successfully  
 ```  
-This output summarizes the results of trimming performed on the forward and reverse reads of Sample P750.   
-A total of 1,350,885 read pairs were found between the forward and reverse strands used as input.   
-A total of 756,928 reads pairs survived the trimming process based on the outlined thresholds stated within the command above.   
-A total of 572,214 reads from the forward strand survived the trimming proceed set by the thresholds stated within the command above therefore; its paired read from the reverse strand failed one or more criteria of trimming.  
-A total of 8,571 reads from the reverse strand survived the trimming proceed set by the thresholds stated within the command above therefore; its paired read from the forward strand failed one or more criteria of trimming.   
-A total of 13,172 paired reads from both the forward and reverse strands failed to meet the trimming criteria therefore; they were both removed.  
+An explaination of the summary output for Sample P750 can be found within the chart below.  
+
+Category | Explaination of Result  
+---------|------------------------  
+Input read pairs | *A total of **1,350,885 read pairs** were found between the forward and reverse strands used as input.*  
+Both surviving | *A total of **756,928 reads pairs** survived the trimming process based on the outlined thresholds stated within the command above.*  
+Forward Only Surviving | *A total of **572,214 reads from the forward strand** survived the trimming proceed set by the thresholds stated within the command above therefore; its paired read from the reverse strand failed one or more criteria of trimming.*  
+Reverse Only Surviving | *A total of **8,571 reads from the reverse strand** survived the trimming proceed set by the thresholds stated within the command above therefore; its paired read from the forward strand failed one or more criteria of trimming.*  
+Dropped | *A total of **13,172 paired reads** from both the forward and reverse strands failed to meet the trimming criteria therefore; they were both removed.*  
 
 We can conclude that a total of 593,957 paired reads failed the thresholds set in the above command. In addition, less than 50% of the forward reads independently passed the thresholds and less than 1% of the reads from the reverse strand passed the threshold. Although this does seem like an extreme number lost in the trimming proccess we must keep in mind that the quality of our reverse reads were very low. Overall less than 1% of the paired reads were completely removed as they did not satisfy any of the independent or paired read conditions.  
 
