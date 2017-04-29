@@ -35,7 +35,7 @@ All reads of both the forward and reverse strands appear within the green region
 ### Adapter Content  
 Here we verify that the adapter sequences seen in the inital FastQC output prior to performing trimming are now gone. If this is not the case then we must continue to assess and remove unwanted library sequences.  
 ![Adapter_Content_Post_Trimming_R1](https://cloud.githubusercontent.com/assets/25803304/25551960/e90106b2-2c5b-11e7-91f2-fab911e8e456.png)  
-![Adapter_Content_Post_Trimming_R2](https://cloud.githubusercontent.com/assets/25803304/25551964/e90adb60-2c5b-11e7-9ad6-d3c888092fd4.png)  
+![Adapter_Content_Post_Trimming_R2](https://cloud.githubusercontent.com/assets/25803304/25557770/316fd740-2ce6-11e7-9b95-a764119f154d.png)  
 
 ***Analysis***  
 In the case of Sample P750, all Nextera XT Illumina Library Kit sequences have been successfully removed.  
