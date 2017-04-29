@@ -28,7 +28,7 @@ After running the FastQC command, we are then able to explore and understand mor
 *Basic Statistics* is a summary in chart format of the details and important information regarding the analyzed sample. Specific attention should be brought to the *encoding* aspect of the chart as it incidates the ASCII encoding of quality values for the analyzed sample.  
 
 ![Basic_Statistics_Forward_Strand_R1](https://cloud.githubusercontent.com/assets/25803304/25551975/f62a6702-2c5b-11e7-970b-f2754edf8521.png)  
-![Basic_Statistics_Reverse_Strand_R2]
+![Basic_Statistics_Reverse_Strand_R2](https://cloud.githubusercontent.com/assets/25803304/25552053/c072492a-2c5d-11e7-94d7-324a4d78a817.png)  
 
 ***Analysis***  
 From the *Basic Statistics* chart we can conclude that there are a total of 1,350,885 raw reads each within the forward and reverse strands. The sequence length of each raw read was determined to be 151bp for both the forward and reverse strand. The average %GC content for the forward strand was slightly higher than the reverse strand (65% versus 64%) which is suitable range for *Pseudomonas aeruginosa* strains. In addition, the encoding parameter tells us that the sequencing is phred33 encoding for both forward and reverse strands.   
@@ -37,7 +37,7 @@ From the *Basic Statistics* chart we can conclude that there are a total of 1,35
 *Per base sequence quality* is a boxplot statistical summary of quality values across all bases at each position in the input fastq sample file. The y-axis represents the quality scores and the x-axis represents the base position. A key aspect of this graph is the 3-colour divisions which help guide the interpretation of results. The green background indicates good quality calls where the red background indicates poor quality calls. It is important to note that the quality degrades as the end of the sequencing run occurs therefore; in most cases it is unlikely to see high quality reads at the end of the read.  
 
 ![Per_base_sequence_quality_Forward_Strand_R1](https://cloud.githubusercontent.com/assets/25803304/25551970/f62664e0-2c5b-11e7-836e-fd4e295a33ba.png)  
-![Per_base_sequence_quality_Reverse_Strand_R2]
+![Per_base_sequence_quality_Reverse_Strand_R2](https://cloud.githubusercontent.com/assets/25803304/25552052/c0708004-2c5d-11e7-86d3-92d6baafe85f.png)  
 
 ***Analysis***  
 *Forward Strand (R1)*  
@@ -51,7 +51,7 @@ The reverse strand *per base sequence quality* however; was not successful as a 
 has the ability to detect 4 types of adapter sequences including the Nextera Transposase Sequence. The sample set used in this tutorial was sequenced using the Nextera XT DNA Library Kit therefore it is possible to see Nextera adapter sequences post sequencing. Adapter libraries should be removed in quality analysis.  
 
 ![Adapter_Content_Forward_Strand_R1](https://cloud.githubusercontent.com/assets/25803304/25551972/f6287b04-2c5b-11e7-818c-26402b1f53c6.png)  
-![Adapter_Content_Reverse_Strand_R2]
+![Adapter_Content_Reverse_Strand_R2](https://cloud.githubusercontent.com/assets/25803304/25552051/c064edca-2c5d-11e7-88ce-2a3cfb885dfa.png)  
 
 ***Analysis***  
 Both the forward and reverse strands have presence of adapter sequences. As the Nextera XT DNA Library Kit was used for sequencing this sample set it is natural for Nextera adaptors to appear in the adapter content section of the FastQC analysis. This adapter sequence must be removed prior to completing downstream analysis.   
