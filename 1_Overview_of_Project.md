@@ -3,13 +3,13 @@ Students are given the ability to design an independent project to analyize sequ
 
 I will create a high throughput bioinformatic pipeline that will incorporate both quality preparations and analysis components. The pipeline will be a combination of python scripts which will include a variety of bioinformatic tools and suites. **The objective of this pipeline is to compare two mapping/alignment tools (Bowtie2 and BWA) to identify similarities and differences in variant calling between the two mapping tools and to see which mapping tool provides the most biologically accurate SNPs and indels.**   
 
-The pipeline consist of 4 components (Figure 1):
+The pipeline consist of 4 components:  
  - Quality Preparations
  - Mapping/Alignment
  - Variant Calling
  - Comparison of Results
  
- ![Figure1](C:/Users/dance/Pictures/Figure1_Github_BIO709CourseProject.png?raw=true)
+![Figure1_Project_Workflow](https://cloud.githubusercontent.com/assets/25803304/25551978/0c999f12-2c5c-11e7-9093-428a2fad9352.png)  
 
 Specifically, I will use this pipeline to assess 206 Prairie Epidemic Strains (PES) from cystic fibrosis patients to uncover SNPs and indels.
 
