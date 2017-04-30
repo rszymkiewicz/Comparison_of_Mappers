@@ -15,10 +15,10 @@ Specifically, I will use this pipeline to assess 206 Prairie Epidemic Strains (P
 
 # Project Aims:
 1. Gain experience with commonly used bioinformatic software tools used in analysis such as Bowtie2, BWA, samtools, bcftools, vcftools, and bedtools.
-2. Compare results of mapping tools available for Whole Genome Sequence data. 
-	A. Preparing samples for downstream analysis by performing quality steps such as trimming and removal of low quality reads from sequence data.
-	B. Perform alignment of whole genome sequences to a reference sequence using Bowtie2 and BWA.
-	C. Perform variant calling and compare vcf outputs of the two selected mapping tools. 
+2. Compare results of mapping tools available for Whole Genome Sequence data.  
+	A. Preparing samples for downstream analysis by performing quality steps such as trimming and removal of low quality reads from sequence data.  
+	B. Perform alignment of whole genome sequences to a reference sequence using Bowtie2 and BWA.  
+	C. Perform variant calling and compare vcf outputs of the two selected mapping tools.  
 
 # Project Evaluation:  
 Successful completion of this project will be determined based on the follow two major areas of the project:  
