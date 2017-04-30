@@ -14,7 +14,7 @@ nFor our purposes, we will be using the mpileup feature within the samtools suit
 ### ***samtools Library Index***
 ```
 samtools faidx [reference file in fasta format]
-``` 
+ ``` 
 ### ***samtools mpileup and bcftools call***  
 **samtools mpileup** extracts information from an input file in BAM format (binary version of SAM file) and combines all the read alignment information into a VCF/BCF file format as output.  
 **bcftools call** command calls the variant sites estimated by the samtools mpileup command and attempts to distinguish genotypes.  
@@ -24,7 +24,7 @@ samtools mpileup -vf [reference file in fasta format] [sample file in sorted bam
 ```  
 #Tool | Command | Parameter | Description  
 ----|---------|-----------|------------  
-samtools | mpileup | -v | *variant calling format (vcf).*  
+ samtools | mpileup | -v | *variant calling format (vcf).*  
 | | | -f | *flag indicating reference file in fasta format.*
 | | | -t DP | *flag indicating the output file will include per-sample read depth.*  Note: This can only be used in conjungtion with -v or -g parameters of the mpileup suite.   
 | | | -t SP | *flag indicating the output file will include per-sample Phred-scaled strand bias P-value.*  Note: This can only be used in conjungtion with -v or -g parameters of the mpileup suite.  bcftools | call | -v | *flag indicating to output variant sites only.*
@@ -34,15 +34,16 @@ samtools | mpileup | -v | *variant calling format (vcf).*
 
 ## File Output
 ### *General information pertaining to VCF/BCF File Output*
-**VCF/BCF** is a variant call format file or binary call format file which contains the genotype likelihoods. There are 3 components to the VCF file: metadata header, header lines, and data lines. The header consists of information explaining the contents of each of the fields of the file represented by an inital hashtag (#) followed by a description. Each of the data lines of the vcf output file contains a number of features in a 10 TAB-delimited column format. It is important to note that column 9 and 10 are not always included within the vcf output file as it is dependent on the parameters used within the command. A chart depicting the 10 columns of the data line section can be seen below:
+**VCF/BCF** is a variant call format file or binary call format file which contains the genotype likelihoods. There are 3 components to the VCF file: metadata header, header lines, and data lines. The header consists of information explaining the contents of each of the fields of the file represented by an inital hashtag (#) followed by a description. Each of the data lines of the vcf output file contains a number of features in a 10 TAB-delimited column format. It is important to note that column 9 and 10 are not always included within the vcf output file as it is dependent on the parameters used within the command. A chart depicting the 10 columns of the data line section can be seen below:  
+
 Column Number | Column Name | Description  
 --------------|-------------|---------------  
 1 | CHROM | *Chromosome name.*  
 2 | POS | *1-based position. The position prior to an indel is represented for indels.*  
-3 | ID | *Variant identifier.*
-4 | REF | *Reference sequence position involved with the variant. A SNP is represented by a single base.*
-5 | ALT | *Comma list of alternative sequences.*
-6 | QUAL | *Phred-scaled probability of all samples being homozygous reference.*  
+3 | ID | *Variant identifier.*  
+4 | REF | *Reference sequence position involved with the variant. A SNP is represented by a single base.*   
+5 | ALT | *Comma list of alternative sequences.*  
+6 | QUAL | *Phred-scaled probability of all samples being homozygous reference.*   
 7 | FILTER | *Semicolon list of filters to which the variant fails.*  
 8 | INFO | *Semicolon list describing variant information.*  
 9 | FORMAT | *Colon list of indivdiual genotypes.*  
