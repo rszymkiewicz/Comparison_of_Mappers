@@ -23,10 +23,12 @@ Specifically, I will use this pipeline to assess 206 Prairie Epidemic Strains (P
 # Project Evaluation:  
 Successful completion of this project will be determined based on the follow two major areas of the project:  
 1. ***Mapping:***  
-	A. Ability to obtain a vcf file for each of the mapping tools.  
-	B. Describe features obtained in each of the vcf output files.   
+	A. Ability to obtain a sam output for each of the mapping tools.  
+	B. Describe summary output of mapping tools. 
 2. ***Variant Calling:***  
-	A. Identify the total number of SNPs and indels per mapping tool.  
-	B. Identify similarities and differences in variant calling (SNP and indel calls) between the two mapping tools.  
+	A. Ability to obtain a vcf file for each of the mapping tools.  
+	B. Describe features obtained in each of the vcf output files.  
+	C. Identify the total number of SNPs and indels per mapping tool.  
+	D. Identify similarities and differences in variant calling (SNP and indel calls) between the two mapping tools.  
 
 ## The project tutorial will begin with gaining some information about the selected Illumina sequencing [sample set](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/2_Sample_Background.md).
