@@ -1,3 +1,5 @@
+#### Return to *BWA Mapping* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md).  
+
 # Variant Calling
 ## What is *variant calling*?  
 Variant calling of next-generation sequencing (NGS) data is a process to which raw sample sequence(s) are mapped to a reference sequence in order to identify similarities and differences that may occur between the raw sample sequence(s) and the reference sequence.  
