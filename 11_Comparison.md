@@ -1,6 +1,8 @@
-# Data Comparison
+#### Return to *Variant Calling using samtools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling_Samtools_Bedtools.md).  
 
-## Objective of this Project
+# Data Comparison  
+
+## Objective of this Project  
 ***Goals of Comparison***  
 Lets recap what we have done thus far. ***The objective of this pipeline as outlined in the [first tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/1_Overview_of_Project.md) was to compare two mapping/alignment tools (Bowtie2 and BWA) by identifying similarities and differences in variant calling between the two mapping tools.***  
 
