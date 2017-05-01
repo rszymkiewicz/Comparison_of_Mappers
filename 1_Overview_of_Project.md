@@ -1,7 +1,7 @@
 # Project Objective:
 Students are given the ability to design an independent project to analyize sequence data utilizing various bioinformatic software tools and suites learnt throughout the BIO720 course. Students are able to use any sequence data readily accessible for analysis.
 
-I will create a high throughput bioinformatic pipeline that will incorporate both quality preparations and analysis components. The pipeline will be a combination of python scripts which will include a variety of bioinformatic tools and suites. **The objective of this pipeline is to compare two mapping/alignment tools (Bowtie2 and BWA) to identify similarities and differences in variant calling between the two mapping tools and to see which mapping tool provides the most biologically accurate SNPs and indels.**   
+I will create a high throughput bioinformatic pipeline that will incorporate both quality preparations and analysis components. The pipeline will be a combination of python scripts which will include a variety of bioinformatic tools and suites. **The objective of this pipeline is to compare two mapping/alignment tools (Bowtie2 and BWA) to identify similarities and differences in variant calling between the two mapping tools.**   
 
 The pipeline consist of 4 components:  
  - Quality Preparations
