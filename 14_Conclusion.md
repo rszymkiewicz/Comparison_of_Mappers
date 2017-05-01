@@ -1,4 +1,4 @@
-#### Return to *Data Comparison using vcftools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison_vcftools_bedtools.md).  
+#### Return to *Data Comparison using vcftools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/13_Comparison_vcftools_bedtools.md).  
 
 # Comparison of Mappers Tutorial Conclusion
 
@@ -10,7 +10,7 @@ Bowtie2 | BWA-MEM
 --------|----  
 **93.46%** overall alignment | **99.08%** overall alignment  
 
-We would expect to see similar overall alignment between the two mapping tools as they both are BWT algorithim based mapping tools. The approximately 5% difference in alignment could be a result of specific parameters and thresholds set by the user when preparing the commands. It is also important to note that the Bowtie2 command used in this tutorial called end-to-end alignment whereas traditionally BWA by default calls local alignment. Recall that end-to-end alignment requires all bases to align exactly whereas local does not require all bases to match rather a minimum threshold. Details of each tool can be found on their respective tutorial pages [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md).  
+We would expect to see similar overall alignment between the two mapping tools as they both are BWT algorithim based mapping tools. The approximately 5% difference in alignment could be a result of specific parameters and thresholds set by the user when preparing the commands. It is also important to note that the Bowtie2 command used in this tutorial called end-to-end alignment whereas traditionally BWA by default calls local alignment. Recall that end-to-end alignment requires all bases to align exactly whereas local does not require all bases to match rather a minimum threshold. Details of each tool can be found on their respective tutorial pages [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) and [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md).  
 
 ## Variant Calling Comparison Summary
 Comparison Tool | Mapping Tool | Results  
