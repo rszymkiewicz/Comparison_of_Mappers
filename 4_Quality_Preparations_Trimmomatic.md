@@ -25,6 +25,7 @@ The command contains both adapter timming components and quality trimming compon
 java -jar trimmomatic.jar PE -threads 12 -trimlog [.txt] [R1.fastq][R2.fastq] [forward_paired.fastq.gz][forward_unpaired.fastq.gz] [reverse_paired.fastq.gz][reverse_unpaired.fastq.gz] ILLUMINACLIP:/home/rachelle/bin/trimmomatic-master/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```    
 
+
 Parameter | Description  
 ----------|------------  
 PE | *flag indicating Paired-end analysis*
@@ -94,5 +95,6 @@ Dropped | *A total of **13,172 paired reads** from both the forward and reverse 
 We can conclude that a total of 593,957 paired reads failed the thresholds set in the above command. In addition, less than 50% of the forward reads independently passed the thresholds and less than 1% of the reads from the reverse strand passed the threshold. Although this does seem like an extreme number lost in the trimming proccess we must keep in mind that the quality of our reverse reads were very low. Overall less than 1% of the paired reads were completely removed as they did not satisfy any of the independent or paired read conditions.  
 
 # Python Script - Trimmomatic
+## [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Trimmomatic.py)
 
 ## Lets varify our quality and adapter trimming was successful and makes practical sense by using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/5_Quality_Preparations_FastQC_CheckAfterTrimming.md) again.  
