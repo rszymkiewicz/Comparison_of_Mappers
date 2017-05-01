@@ -33,7 +33,7 @@ As mentioned within the [project outline](https://github.com/rszymkiewicz/Compar
   A. Ability to obtain a sam output for each of the mapping tools.  
   B. Describe summary output of mapping tools.  
 
-**Success:** *As this tutorial was able to perform mapping using two tools (```Bowtie2``` and ```BWA_MEM```) in order to produce a sam file output as well as, analyze the summary output provided by both mapping tools upon completion of alignment these objectives were met.*   
+**Success:** *As this tutorial was able to perform mapping using two tools (```Bowtie2``` and ```BWA_MEM```) in order to produce a sam output file as well as, analyze the summary output provided by both mapping tools upon completion of alignment these objectives were met.*   
 
 ### **Variant Calling:**  
   A. Ability to obtain a vcf file for each of the mapping tools.  
