@@ -3,9 +3,6 @@
 # Quality Preparations - FastQC Quality Check After Trimming
 Upon the completion of adapter and quality trimming of raw sequence reads it is important to verify trimming was not only successful but accurate in its performance. In some instances, trimming may not have resulted in the desired resultant. By utilizing FastQC software program one is able to confirm the success or further quality preparations required prior to continuing with sequence analysis. A python script to perform post trimming sequence quality check for the entire data set can be found at the bottom of the page. We will continue to follow our P750 sample and assess the success of our previous trimming step using trimmomatic below.  
 
-**FastQC:**  
-Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc  
-
 ## FastQC Quality Check After Trimming Command
 ```
 fastqc [forward_trimmed.fastq] -o [output_folder_path]  
@@ -16,7 +13,13 @@ Parameter | Description
 ----------|------------  
 -o | *flag indicating output folder path location*  
 
-## FastQC Analysis - Sample P750  
+## FastQC Analysis - Sample P750 
+### Output files for this page of the tutorial can be found in the following links:
+[Forward_Paired - Html](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_forward_paired.fq_fastqc.html)  
+[Forward_Paired - Output Folder](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_forward_paired.fq_fastqc.zip)  
+[Reverse_Paired - Html](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_reverse_paired.fq_fastqc.html)  
+[Reverse_Paired - Output Folder](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_reverse_paired.fq_fastqc.zip)  
+
 As previously explored in our initial FastQC assessment of our raw samples from our sample set, we focused on 3 specific areas of analysis; Basic Statistics, Per base sequence quality, and Adapter Content. Post-trimming we will look specifically at these 3 areas again for our Sample P750 however; we will also take into account any other areas which may have been flagged as unusual (red) and draw conclusions surrounding our trimming step. A total of 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content*. We will also assess these 3 areas of analysis and determine if we can proceed forward with our sample set.  
 
 ### Basic Statistics  
@@ -66,6 +69,9 @@ Trimmomatic manual states that the **kmer content** will fail if the k-mer is im
 
 ## Summary Analysis - Sample P750:  
 The Nextera XT DNA Library adapter sequences were successfully removed in trimming and low quality reads were also removed in trimming. Although 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content* the warning threshold is deemed to be sensitive for these 3 categories as described within the FastQC manual. We will keep these warnings in mind throughout the remaining downstream analysis however; we will proceed forward in confidence with our trimmed P750 sample.  
+
+# Citation
+Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc 
 
 # Python Script - FastQC Quality Check Post Trimming
 ## [FastQC After](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/FastQC_After.py)
