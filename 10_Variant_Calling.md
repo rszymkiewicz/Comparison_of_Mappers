@@ -9,4 +9,4 @@ A particular file known as the *variant calling format (VCF)* established by Dan
 ## Citation
 Danecek, P., Auton, A., Abecasis, G., Albers, C. A., Banks, E., DePristo, M. A., … 1000 Genomes Project Analysis Group. (2011). The variant call format and VCFtools. Bioinformatics, 27(15), 2156–2158. http://doi.org/10.1093/bioinformatics/btr330
 
-## Prior to manipulating a vcf file we first must create one. Lets use [samtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md) to help us do this.  
+## Prior to manipulating a vcf file we first must create one. Lets use [samtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bcftools.md) to help us do this.  
