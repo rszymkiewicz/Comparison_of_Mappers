@@ -1,4 +1,4 @@
-#### Return to *BWA Mapping* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md).  
+#### Return to *Mapping Output File Conversion* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_sam_to_bam_to_sorted.md).  
 
 # Variant Calling
 ## What is *variant calling*?  
