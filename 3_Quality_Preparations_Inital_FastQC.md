@@ -6,10 +6,7 @@ Quality checking can be performed through the evaluation of raw sequences. To do
 
 In order to begin sequence analysis with the highest sample quality possible, one must first assess the sequences followed by trimming of inappropriate components such as library material and low quality reads. The FastQC software tool is a great starting point to identify potential areas of uncertainity within the sequence sample.  
 
-## FastQC
-**FastQC:**  
-Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
-
+## FastQC  
 FastQC a java application developed by Babraham Bioinformatics which identifies and categorizes potential problems with raw sequence data from high throughput sequencing pipelines such as Illumina. The FastQC application provides an easy to understand html summary report covering 12 areas of interest. Each area of analysis is evaluated and measured based on the assumption of a random and diverse sample. A pass (normal), warning (suspicious), and failure (unusual result) of analysis is represented by a green, yellow, or red coloured image respectively. It is important to note that all areas of analysis should be taken in the context of the specific sample and its conditions.  
 
 We will be using this program to evaluate the raw reads in fastq format of our sample set focusing on Sample P750. A python script used to perform the FastQC inital quality check on all samples within the sample set can be seen at the end of this page. 
@@ -24,6 +21,12 @@ Parameter | Description
 -o | *flag indicating the output folder path which will contain all output files including the html file*   
 
 ### FastQC Analysis - Sample P750
+### Output files for this page of the tutorial can be found in the following links:
+[R1 Strand - Html](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_L00X_R1_00X_fastqc.html)  
+[R1 Strand - Output Folder](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_L00X_R1_00X_fastqc.zip)  
+[R2 Strand - Html](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_L00X_R2_00X_fastqc.html)  
+[R2 Strand - Output Folder](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_L00X_R2_00X_fastqc.zip)  
+
 After running the FastQC command, we are then able to explore and understand more about our raw samples. As mentioned above, FastQC provides 12 areas of analysis. As these samples are raw data it is unlikely we will see all 12 areas of analysis green (normal) however; it is important to have specific areas pass FastQC analysis. Lets look at some of these areas in more detail with our P750 sample in order to evaluate aspects which require quality trimming. Here we will look at 3 specific areas of analysis; *Basic Statistics*, *Per base sequence quality*, and *Adapter Content*.  
 
 #### Basic Statistics
@@ -61,6 +64,9 @@ Both the forward and reverse strands have presence of adapter sequences. As the 
 ### Summary Analysis - Sample P750:
 Nextera XT Library adapters were found within the sample therefore these adapters will need to be removed in the trimming process.  
 The reverse strand has low quality reads as seen within the *Per_base_sequence_quality* graphs. Trimming of low quality reads will need to be performed as well.  
+
+## Citation
+Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 
 # Python Script - FastQC Inital Quality Check
 ## [FastQC Before](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/FastQC_Before.py)
