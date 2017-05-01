@@ -18,7 +18,7 @@ bwa index [reference file in fasta format]
 BWA outputs one alignment per read however; if the read is chimeric it may output multiple alignments. 
 BWA reports mapping quality based on each individual read compared to reporting mapping quality per pair when using paired-end features. THis is due to the ability of one strand to have the ability to map to a tandom repeat whereas the other strand does not therefore accurate mapping cannot be determined in these case scenarios. 
 
-Alignment using *bwa mem* uses seeding alignments based upon the maximal exact matches (MEM) and extends seeds using the affine-gap Smith-Waterman algorith (SW). The algorithm uses *local alignment* having the ability to produce multiple alignments for certain regions of the reference sequence. 
+lignment using *bwa mem* uses seeding alignments based upon the maximal exact matches (MEM) and extends seeds using the affine-gap Smith-Waterman algorith (SW). The algorithm uses *local alignment* having the ability to produce multiple alignments for certain regions of the reference sequence. 
 
 ```
 bwa mem -t [reference file in fasta format] [Forward paired strand in fastq format] [Reverse paired strand in fastq format] > [Output file in sam format]
@@ -58,4 +58,4 @@ Li H. (2013) Aligning sequence reads, clone sequences and assembly contigs with 
 # Python Script - Mapping with BWA
 ## [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/BWA_MEM.py)
 
-## Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md).   
+## Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling.md).   
