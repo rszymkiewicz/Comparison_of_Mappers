@@ -53,5 +53,6 @@ samtools flagstat [BWA_bam_output_file]
 A total of 1,521,272 reads successfully passed the quality threshold and were analyzed. 761,222 reads were from the forward strand and 760,050 were from the reverse strand. A total of 1,507,304 reads were mapped in a proper pair (99.08%) to the reference sequence. A total of 1109 reads were not mapped however their mate did map to the reference sequence. 83 paired reads mapped to a different chromosome with a total of 9 paired reads mapping to a different chromosome with a quality greater than 5.  
 
 # Python Script - Mapping with BWA
+## [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/BWA_MEM.py)
 
 ## Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md).   
