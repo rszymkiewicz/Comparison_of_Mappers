@@ -7,8 +7,7 @@
 
 ***bcftools*** is another bioinformatic suite tool and is similar to samtools however; it has the ability to manipulate vcf file formats. In our case, the samtools command we will be using will output a vcf file and the bcftools command will manipulate that vcf file and allow us to extract specific information for further downstream analysis.  
 
-For our purposes, we will be using the mpileup feature within the samtools suite in combination with the bcftools call command in order to create a pileup of reads which aligned to a specific reference sequence which can be used for variant calling analysis. To do this we will be taking a sorted bam file from each of the two mapping processes we previously completed [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) and [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) as input for our *mpileup* command. We will continue to use our Sample P750 as an example for this part of the tutorial and a python script will be used for the remaining samples of our sample set. The python script can be found at the bottom of the page.   
-
+For our purposes, we will be using the *mpileup* feature within the samtools suite in combination with the bcftools *call* command in order to create a pileup of reads which aligned to a specific reference sequence which can be used for variant calling analysis. To do this we will be taking a [*sorted bam file*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_sam_to_bam_to_sorted.md) from each of the two mapping processes we previously completed as input for our *mpileup* command. We will continue to use Sample P750 as an example for this part of the tutorial and a python script will be used for the remaining samples of our sample set. The python script can be found at the bottom of the page.   
 ## Commands and Parameters  
 ### ***samtools Library Index***
 ```
