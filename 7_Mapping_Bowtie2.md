@@ -1,3 +1,5 @@
+#### Return to *Mapping* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/6_Mapping.md).  
+
 # Mapping using Bowtie2  
 ***End-to-end Alignment and Paired-end***  
 Bowtie2 performs alignment where all characters of a read must align to a segment of reference sequence. This process is known as end-to-end read alignment and is the default setting for Bowtie2. As our sample set is paired-end, strands of forward and reverse orientation, we will utilize the paired-end parameters indicated by -1 and -2 to represent the forward and reverse strand respectively. Bowtie2 has a randomized process for assigning alignment therefore when there are multiple possible alignments of good quality a pseudo-random interger determines which alignment will be reported.  
