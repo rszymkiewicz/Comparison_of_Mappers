@@ -2,7 +2,7 @@
 
 # Quality Preparations - Trimming of Adapters and Low Quality Sequences
 
-After assessing the inital quality of our sequencing samples we must take the appropriate steps to improve the quality of each sample to aid in sequence analysis. We will now quality trim our samples using a bioinformatic tool called ***Trimmomatic***.
+After assessing the initial quality of our sequencing samples we must take the appropriate steps to improve the quality of each sample to aid in sequence analysis. We will now quality trim our samples using a bioinformatic tool called ***Trimmomatic***.
 
 ## Trimmomatic
 **Trimmomatic** is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
@@ -90,7 +90,7 @@ Forward Only Surviving | *A total of **572,214 reads from the forward strand** s
 Reverse Only Surviving | *A total of **8,571 reads from the reverse strand** survived the trimming proceed set by the thresholds stated within the command above therefore; its paired read from the forward strand failed one or more criteria of trimming.*  
 Dropped | *A total of **13,172 paired reads** from both the forward and reverse strands failed to meet the trimming criteria therefore; they were both removed.*  
 
-We can conclude that a total of 593,957 paired reads failed the thresholds set in the above command. In addition, less than 50% of the forward reads independently passed the thresholds and less than 1% of the reads from the reverse strand passed the threshold. Although this does seem like an extreme number lost in the trimming proccess we must keep in mind that the quality of our reverse reads were very low. Overall less than 1% of the paired reads were completely removed as they did not satisfy any of the independent or paired read conditions.  
+We can conclude that a total of 593,957 paired reads failed the thresholds set in the above command. In addition, less than 50% of the forward reads independently passed the thresholds and less than 1% of the reads from the reverse strand passed the threshold. Although this does seem like a large number of reads lost in the trimming proccess we must keep in mind that the quality of our reverse reads were very low. Overall less than 1% of the paired reads were completely removed as they did not satisfy any of the independent or paired read conditions.  
 
 # Citation
 Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
