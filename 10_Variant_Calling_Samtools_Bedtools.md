@@ -8,7 +8,7 @@ Li H A statistical framework for SNP calling, mutation discovery, association ma
 
 ***bcftools*** is another bioinformatic suite tool and is similar to samtools however; it has the ability to manipulate vcf file formats. In our case, the samtools command we will be using will output a vcf file and the bcftools command will manipulate that vcf file and allow us to extract specific information for further downstream analysis.  
 
-nFor our purposes, we will be using the mpileup feature within the samtools suite in combination with the bcftools call command in order to create a pileup of reads which aligned to a specific reference sequence which can be used for variant calling analysis. To do this we will be taking a sorted bam file from each of the two mapping processes we previously completed [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) and [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) as input for our *mpileup* command. We will continue to use our Sample P750 as an example for this part of the tutorial and a python script will be used for the remaining samples of our sample set. The python script can be found at the bottom of the page.   
+For our purposes, we will be using the mpileup feature within the samtools suite in combination with the bcftools call command in order to create a pileup of reads which aligned to a specific reference sequence which can be used for variant calling analysis. To do this we will be taking a sorted bam file from each of the two mapping processes we previously completed [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) and [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) as input for our *mpileup* command. We will continue to use our Sample P750 as an example for this part of the tutorial and a python script will be used for the remaining samples of our sample set. The python script can be found at the bottom of the page.   
 
 ## Commands and Parameters  
 ### ***samtools Library Index***
@@ -18,7 +18,7 @@ samtools faidx [reference file in fasta format]
 ### ***samtools mpileup and bcftools call***  
 **samtools mpileup** extracts information from an input file in BAM format (binary version of SAM file) and combines all the read alignment information into a VCF/BCF file format as output.  
 **bcftools call** command calls the variant sites estimated by the samtools mpileup command and attempts to distinguish genotypes.  
-e
+
 ```
 samtools mpileup -vf [reference file in fasta format] [sample file in sorted bam format] | bcftools call -vmO z -o [output file in vcf gzipped format]
 ```  
