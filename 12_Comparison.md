@@ -1,4 +1,4 @@
-#### Return to *Variant Calling using samtools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling_Samtools_Bedtools.md).  
+#### Return to *Variant Calling using samtools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md).  
 
 # Data Comparison  
 
@@ -16,4 +16,4 @@ We will use a variety of bioinformatic tools to assess the similarities and diff
 4. bedtools - *bedtools intersect*  
 5. bedtools - *bedtools subtract*  
 
-## Now that we have combined all the identified the regions of alignment between our sample and reference sequence, lets dive deeper and compare the results of our two mapping tools (Bowtie2 and BWA) using [vcftools, bcftools, and bedtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison_vcftools_bedtools.md) to see if we obtained different results.  
+## Now that we have combined all the identified the regions of alignment between our sample and reference sequence, lets dive deeper and compare the results of our two mapping tools (Bowtie2 and BWA) using [vcftools, bcftools, and bedtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/13_Comparison_vcftools_bedtools.md) to see if we obtained different results.  
