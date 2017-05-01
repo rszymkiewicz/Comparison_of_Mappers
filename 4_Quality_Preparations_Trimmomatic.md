@@ -4,12 +4,8 @@
 
 After assessing the inital quality of our sequencing samples we must take the appropriate steps to improve the quality of each sample to aid in sequence analysis. We will now quality trim our samples using a bioinformatic tool called ***Trimmomatic***.
 
-## Trimmomatic 
-**Trimmomatic**:  
-Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
-
+## Trimmomatic
 **Trimmomatic** is a command line read trimming tool developed by the Usadel lab for both single-end and paired-end sequence data. Our sample set contains paired-end sequences indicated by R1 (forward strand) and R2 (reverse stand). In our case, we will use the paired-end features for trimming our sample set. A python script will be used to run trimmomatic on all samples of our data set and can be found at the bottom of the page.
-
 
 Trimmomatic has two methods to to trim sequence reads:  
 1.  ***Simple Trimming*** 
@@ -44,7 +40,7 @@ LEADING | *removes leading low quality or N bases below the quality threshold in
 TRAILING | *removes trailing low quality or N bases below the quality threshold indicated by the number (3).*  
 SLIDINGWINDOW:**4**:15 |  *The size (number of bases) of the sliding window is indicated by the first number (4).*    
 SLIDINGWINDOW:4:**15** |  *removes bases where the average quality of that base is less than the second number indicated (15).*
-MINLEN | *removes reads which fall below the minimum number of bases per read (read length) threshold indicated by the number (3).*  
+MINLEN | *removes reads which fall below the minimum number of bases per read (read length) threshold indicated by the number (36).*  
 
 ### Trimmomatic Analysis - Sample P750
 The trimmomatic code above was used to perform adapter and quality trimming of Sample P750. The code states that we chose to remove Nextera adapter sequences, bases which had quality less than 3, those bases where the average quality of 4-bases wide was less than 15, as well as any reads less than 36 bases in length.  
@@ -95,6 +91,9 @@ Reverse Only Surviving | *A total of **8,571 reads from the reverse strand** sur
 Dropped | *A total of **13,172 paired reads** from both the forward and reverse strands failed to meet the trimming criteria therefore; they were both removed.*  
 
 We can conclude that a total of 593,957 paired reads failed the thresholds set in the above command. In addition, less than 50% of the forward reads independently passed the thresholds and less than 1% of the reads from the reverse strand passed the threshold. Although this does seem like an extreme number lost in the trimming proccess we must keep in mind that the quality of our reverse reads were very low. Overall less than 1% of the paired reads were completely removed as they did not satisfy any of the independent or paired read conditions.  
+
+# Citation
+Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
 
 # Python Script - Trimmomatic
 ## [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Trimmomatic.py)
