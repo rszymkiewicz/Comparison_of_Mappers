@@ -28,7 +28,7 @@ Parameter | Description
 -t | *flag indicating the number of threads*  
 
 ## BWA-MEM Analysis - Sample P750    
-Unlike Bowtie2 **BWA-MEM** does not produce a simplistic summary upon completion of alignment. In order to obtain a summary of information we can use **```samtools flagstat```** to aquire some alignment information from the **BWA-MEM** tool. To do this we first must convert our *sam* file to a *bam* file as outlined in the [next tutorial page]().  Below is a general outline of the **samtools flagstat** command followed by the output for Sample P750.   
+Unlike Bowtie2 **BWA-MEM** does not produce a simplistic summary upon completion of alignment. In order to obtain a summary of information we can use **```samtools flagstat```** to aquire some alignment information from the **BWA-MEM** tool. To do this we first must convert our *sam* file to a *bam* file as outlined in the [next tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_sam_to_bam_to_sorted.md).  Below is a general outline of the **samtools flagstat** command followed by the output for Sample P750.   
 
 ```
 samtools flagstat [BWA_bam_output_file]
