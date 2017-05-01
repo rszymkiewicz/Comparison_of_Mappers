@@ -15,7 +15,8 @@ Our comparison of mapper tools (Bowtie2 and BWA) will begin with samtools using 
 
 ## Commands and Parameters  
 ### samtools - *tabix*
-**tabix** creates a compressed and indexed TAB-delimited file from common position sorted files.
+**tabix** creates a compressed and indexed TAB-delimited file from common position sorted files. These files are required as input for *vcf-compare.*  
+
 ```
 tabix -p vcf -h [sample file in vcf format]
 ```  
@@ -23,7 +24,8 @@ tabix -p vcf -h [sample file in vcf format]
 ----------|-------------
 -p | *flag indicating input sample file format [gff, bed, sam, vcf] required for indexing*  
 -h | *print header and meta lines.*
-*
+
+
 ### vcftools - *vcf-compare*  
 **vcf-compare** compares the positions of multiple vcf files. In our case we will be comparing the Bowtie2 vcf file output to the BWA vcf file output to see if the two mapper tools produced any differences in variant calling. The
 ```
@@ -80,8 +82,30 @@ The bedtools intersect tool outputs a vcf file of unique genome features based o
 
 # Analysis of Sample P750
 ***vcf-compare***  
+VN	14	Sample_P750_BWA.vcf.gz (15.4%)
+VN	28	Sample_P750_B2.vcf.gz (26.7%)
+VN	77	Sample_P750_B2.vcf.gz (73.3%)	Sample_P750_BWA.vcf.gz (84.6%)
+
+Based on the ***vcf-compare*** output it can be determined that a total of 14 variant sites were unique to BWA mapping representing a total of 15.4%. A total of 28 variant sites were unique to Bowtie2 mapping thus a total of 26.7%. In addition, a total of 77 variant sites were shared between Bowtie2 and BWA mapping for Sample P750 which represented 73.3% and 84.6% of the total variant sites per mapping tool respectively.  
+
 ***bcftools stats and bcftools/plots-vcfstats***  
+**Bowtie 2**  
+- 84 SNPs identified
+- 21 indels identified
+- Ratio of transitions and transversions (ts/tv) 2.111111
+
+**BWA**
+- 74 SNPs identified
+- 17 indels identified
+- Ratio of transitions and transversions (ts/tv) 4.285714
+
 ***bcftools intersect***  
+A total of 78 regions were common between the two files.
+
 ***bcftools subtract***  
+A total of 14 regions were unique to BWA mapping consisting of 8 SNPs and 6 indels.  
+A total of 27 regions were unique to Bowtie2 mapping consisting of 18 SNPs and 9 indels.  
+
+# Output files for this page of the tutorial can be found [here] 
 
 # Python Script  
