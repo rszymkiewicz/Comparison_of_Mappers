@@ -1,6 +1,6 @@
-## Variant Calling
+# Variant Calling
 ## What is *variant calling*?  
-Variant calling of Next-Generation Sequencing data is a process to which raw sample sequence(s) are mapped to a reference sequence in order to identify similarities and differences that may occur between the raw sample sequence(s) and the reference sequence.  
+Variant calling of next-generation sequencing (NGS) data is a process to which raw sample sequence(s) are mapped to a reference sequence in order to identify similarities and differences that may occur between the raw sample sequence(s) and the reference sequence.  
 
 A particular file known as the *variant calling format (VCF)* established by Danecek et al, in 2011 and is commonly file format used to store variant calling information such as SNPS, indels, and structrual variants. VCFtools is a bioinformatic suite tool which manipulates this type of data files; allowing users perform various analysis by merging or comparing *vcf* files. The manual for vcftools can be found [here](https://vcftools.github.io/index.html). 
 
