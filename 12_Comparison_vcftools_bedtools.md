@@ -20,7 +20,7 @@ Our comparison of mapper tools (Bowtie2 and BWA) will begin with samtools using 
 ```
 tabix -p vcf -h [sample file in vcf format]
 ```  
- Parameter | Description
+Parameter | Description
 ----------|-------------
 -p | *flag indicating input sample file format [gff, bed, sam, vcf] required for indexing*  
 -h | *print header and meta lines.*
@@ -39,7 +39,7 @@ Output information is based upon the first sample input vcf file and outlines th
 ```
 bcftools stats --threads 11 -F [reference file in fasta format] -s [sample file in sam format] > [output file and path]
 ```  
- *Parameter | Description
+Parameter | Description
 ----------|------------  
 -threads | *number of threads available for use.*  
 -F | *flag indicating reference file in fasta format.*  
@@ -82,10 +82,11 @@ The bedtools intersect tool outputs a vcf file of unique genome features based o
 
 # Analysis of Sample P750
 ***vcf-compare***  
+```
 VN	14	Sample_P750_BWA.vcf.gz (15.4%)
 VN	28	Sample_P750_B2.vcf.gz (26.7%)
 VN	77	Sample_P750_B2.vcf.gz (73.3%)	Sample_P750_BWA.vcf.gz (84.6%)
-
+```  
 Based on the ***vcf-compare*** output it can be determined that a total of 14 variant sites were unique to BWA mapping representing a total of 15.4%. A total of 28 variant sites were unique to Bowtie2 mapping thus a total of 26.7%. In addition, a total of 77 variant sites were shared between Bowtie2 and BWA mapping for Sample P750 which represented 73.3% and 84.6% of the total variant sites per mapping tool respectively.  
 
 ***bcftools stats and bcftools/plots-vcfstats***  
