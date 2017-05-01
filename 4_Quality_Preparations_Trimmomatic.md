@@ -1,4 +1,4 @@
- #### Return to initial FastQC assessment of raw reads by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).  
+#### Return to *initial FastQC assessment of raw reads* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).  
 
 # Quality Preparations - Trimming of Adapters and Low Quality Sequences
 
