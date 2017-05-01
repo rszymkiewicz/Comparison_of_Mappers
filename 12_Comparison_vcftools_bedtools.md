@@ -81,6 +81,7 @@ Parameter | Description
 The bedtools intersect tool outputs a vcf file of unique genome features based on the base file provided in the -a parameter. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling_Samtools_Bedtools.md).
 
 # Analysis of Sample P750
+### Output files for this page of the tutorial can be found [here]()
 ***vcf-compare***  
 ```
 VN	14	Sample_P750_BWA.vcf.gz (15.4%)
@@ -100,14 +101,19 @@ Based on the ***vcf-compare*** output it can be determined that a total of 14 va
 - 17 indels identified
 - Ratio of transitions and transversions (ts/tv) 4.285714
 
-***bcftools intersect***  
+***bcftools intersect*** 
 A total of 78 regions were common between the two files.
 
-***bcftools subtract***  
+***bcftools subtract*** 
 A total of 14 regions were unique to BWA mapping consisting of 8 SNPs and 6 indels.  
-A total of 27 regions were unique to Bowtie2 mapping consisting of 18 SNPs and 9 indels.  
-
-# Output files for this page of the tutorial can be found [here]() 
+A total of 27 regions were unique to Bowtie2 mapping consisting of 18 SNPs and 9 indels.   
 
 # Python Script - Variant Calling Comparison of Bowtie2 and BWA-MEM
 ## [Compare Variant Calling](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/CompareVariantCalling.py)  
+
+### Important Note:  
+Prior to using the *Compare_Variant_Calling.py* python script, one will need to run the following to scripts.  
+[VCF File Paths (Bowtie2)](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/VCF_Path_Location_Bowtie2.py)  
+[VCF File Paths (BWA-MEM)](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/VCF_Path_Location_BWA.py)  
+
+Upon running the two scripts above, two text output files will be produced (one per script) representing the vcf output file paths from the variant calling tutorial page from each of the two mappers (Bowtie2 and BWA_MEM). The location of these two text files must be in the same location where the *Compare_Variant_Calling.py* python script is run.  
