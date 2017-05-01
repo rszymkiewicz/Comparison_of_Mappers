@@ -1,3 +1,5 @@
+#### Return to *Bowtie2 Mapping* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md).  
+
 # Mapping using BWA
 **BWA Manual:** http://bio-bwa.sourceforge.net/bwa.shtml  
 Li H. and Durbin R. (2009) Fast and accurate short read alignment with Burrows-Wheeler Transform. Bioinformatics, 25:1754-60. [PMID: 19451168]  
