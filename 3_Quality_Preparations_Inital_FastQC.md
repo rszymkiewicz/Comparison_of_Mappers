@@ -1,3 +1,5 @@
+#### Return to *Sample Background* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/2_Sample_Background.md).  
+
 # Quality Preparation of Whole Genome Sequences
 Checking for good quality sequences is the first component of sequence analysis.  
 Quality checking can be performed through the evaluation of raw sequences. To do this, programs can be used to identify potential areas of uncertainty specifically surrounding both the sequencer (equipment error) and the library material (human error) which may have contributed to the final error rate. It is essential to investigate the quality of sequences, as the biological outcomes will be affected by each step of analysis, beginning with the raw sample. 
