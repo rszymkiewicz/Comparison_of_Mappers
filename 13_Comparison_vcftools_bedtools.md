@@ -1,9 +1,9 @@
 #### Return to *Data Comparison Overview* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison.md). 
 
 # Data Comparison using *vcftools* and *bedtools*  
-A variety of tools are available to assist in downstream analysis of Illumina sequencing samples. For our purposes, we will be using 3 bioinformatic suite tools, samtools, vcftools, bedtools, and bcftools. Each bioinformatic tool has numerous commands available to assist in the manipulation of file outputs supporting the abundant information that can be obtained through genotyping.  
+A variety of tools are available to assist in downstream analysis of Illumina sequencing samples. For our purposes, we will be using 3 bioinformatic suite tools, ***samtools, vcftools, bedtools,*** and ***bcftools***. Each bioinformatic tool has numerous commands available to assist in the manipulation of file outputs supporting the abundant information that can be obtained through genotyping.  
 
-Our comparison of mapper tools (Bowtie2 and BWA) will begin with samtools using the tabix command to create a tab-deliminated genome position file. We will use the compare command of vcftools to output a venn diagram of the unqiue and similar results obtained from the two mapping tools. The stats command within the bcftools suite will produce various statistical information in a graphical format such as. Finally bedtools intersect and subtract commands will be used as another mechanism to identify overlaps and unqiue features when comparing the two mapping tools used in this tutorial. 
+Our comparison of mapper tools (Bowtie2 and BWA) will begin with samtools using the *tabix* command to create a tab-deliminated genome position file. We will use the *compare* command of vcftools to output a venn diagram of the unique and similar results obtained from these two mapping tools. The *stats* command within the bcftools suite will produce various statistical information in a graphical format. Finally bedtools intersect and subtract commands will be used as another mechanism to identify overlaps and unique features when comparing the two mapping tools as used in this tutorial. 
 
 ## Commands and Parameters  
 ### samtools - *tabix*
@@ -85,7 +85,7 @@ VN	14	Sample_P750_BWA.vcf.gz (15.4%)
 VN	28	Sample_P750_B2.vcf.gz (26.7%)
 VN	77	Sample_P750_B2.vcf.gz (73.3%)	Sample_P750_BWA.vcf.gz (84.6%)
 ```  
-Based on the ***vcf-compare*** output it can be determined that a total of 14 variant sites were unique to BWA mapping representing a total of 15.4%. A total of 28 variant sites were unique to Bowtie2 mapping thus a total of 26.7%. In addition, a total of 77 variant sites were shared between Bowtie2 and BWA mapping for Sample P750 which represented 73.3% and 84.6% of the total variant sites per mapping tool respectively.  
+Based on the ***vcf-compare*** output it can be determined that a total of 14 variant sites were unique to BWA mapping. A total of 28 variant sites were unique to Bowtie2 mapping. In addition, a total of 77 variant sites were shared between Bowtie2 and BWA mapping for Sample P750 which represented 73.3% and 84.6% of the total variant sites per mapping tool respectively.  
 
 ***bcftools stats and bcftools/plots-vcfstats***  
 **Bowtie 2**  
