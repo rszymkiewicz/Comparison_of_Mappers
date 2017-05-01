@@ -16,7 +16,7 @@ A list of all tutorial pages can be found below if one desires to skip to a spec
 8. [Mapping: BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md)  
 9. [Mapping Output Conversion](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_sam_to_bam_to_sorted.md)
 10. [Variant Calling](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling.md)  
-11. [Variant Calling: samtools and bcftools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md)  
+11. [Variant Calling: samtools and bcftools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bcftools.md)  
 12. [Comparison](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison.md)  
 13. [Comparison: samtools, vcftools, bcftools, and bedtools](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/13_Comparison_vcftools_bedtools.md)
 14. [Conclusion](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/14_Conclusion.md)  
