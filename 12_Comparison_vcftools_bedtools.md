@@ -117,3 +117,5 @@ Prior to using the *Compare_Variant_Calling.py* python script, one will need to 
 [VCF File Paths (BWA-MEM)](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/VCF_Path_Location_BWA.py)  
 
 Upon running the two scripts above, two text output files will be produced (one per script) representing the vcf output file paths from the variant calling tutorial page from each of the two mappers (Bowtie2 and BWA_MEM). The location of these two text files must be in the same location where the *Compare_Variant_Calling.py* python script is run.  
+
+## Please click [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Conclusion.md) for a summary of this tutorial.
