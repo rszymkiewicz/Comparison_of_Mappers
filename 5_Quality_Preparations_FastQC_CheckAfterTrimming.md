@@ -1,7 +1,7 @@
 #### Return to *trimming of raw reads using Trimmomatic* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).  
 
 # Quality Preparations - FastQC Quality Check After Trimming
-Upon the completion of adapter and quality trimming of raw sequence reads it is important to verify trimming was not only successful but accurate in its performance. In some instances, trimming may not have resulted in the desired resultant. By utilizing FastQC software program one is able to confirm the success or further quality preparations required prior to continuing with sequence analysis. A python script to perform post trimming sequence quality check for the entire data set can be found at the bottom of the page. We will continue to follow our P750 sample and assess the success of our previous trimming step using trimmomatic below.  
+Upon the completion of adapter and quality trimming of raw sequence reads it is important to verify trimming was not only successful but accurate in its performance. In some instances, trimming may not have resulted in the desired outcome. By utilizing FastQC software program, one is able to confirm the success or further quality preparations required prior to continuing with sequence analysis. A python script to perform post trimming sequence quality check for the entire data set can be found at the bottom of the page. We will continue to follow our Sample P750 and assess the success of our previous trimming step using trimmomatic below.  
 
 ## FastQC Quality Check After Trimming Command
 ```
@@ -20,7 +20,7 @@ Parameter | Description
 [Reverse_Paired - Html](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_reverse_paired.fq_fastqc.html)  
 [Reverse_Paired - Output Folder](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750_reverse_paired.fq_fastqc.zip)  
 
-As previously explored in our initial FastQC assessment of our raw samples from our sample set, we focused on 3 specific areas of analysis; Basic Statistics, Per base sequence quality, and Adapter Content. Post-trimming we will look specifically at these 3 areas again for our Sample P750 however; we will also take into account any other areas which may have been flagged as unusual (red) and draw conclusions surrounding our trimming step. A total of 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content*. We will also assess these 3 areas of analysis and determine if we can proceed forward with our sample set.  
+As previously explored in our initial FastQC assessment of our raw samples from our sample set, we focused on 3 specific areas of analysis; Basic Statistics, Per base sequence quality, and Adapter Content. Post-trimming we will look specifically at these 3 areas again for our Sample P750 however; we will also take into account any other areas which may have been flagged as unusual (red) and draw conclusions surrounding our trimming step. A total of 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content*. We will also assess these 3 areas of analysis and determine if we can proceed forward with our analysis.  
 
 ### Basic Statistics  
 It is important to verify no extreme results were obtained after trimming of our sample. 
@@ -50,7 +50,7 @@ In the case of Sample P750, all Nextera XT Illumina Library Kit sequences have b
 ![Per Title Sequence Quality_Post_Trimming_R2](https://cloud.githubusercontent.com/assets/25803304/25551957/e8f5dfb2-2c5b-11e7-85d8-5f8ec01fae2a.png)  
 
 ***Analysis***  
-Trimmomatic manual states that the **per title sequencing quality** calls a failure when the phred score is 5 less than the mean for that base across all titles. Reasons for seeing warnings or errors on this plot could be transient problems such as bubbles going through the flowcell, or they could be more permanent problems such as smudges on the flowcell or debris inside the flowcell lane. The forward strand has a few areas of moderate/high concern regarding a low phred quality score however; overall there is no concern. The reverse strand on the other hand has a large number of titles which low phred quality score. This may be attributed by the low quality reads which are common in reverse strands.  
+Trimmomatic manual states that the **per title sequencing quality** calls a failure when the phred score is 5 less than the mean for that base across all titles. Reasons for seeing warnings or errors on this plot could be transient problems such as bubbles going through the flowcell, or they could be more permanent problems such as smudges on the flowcell or debris inside the flowcell lane. The forward strand has a few areas of moderate/high concern regarding a low phred quality score however; overall there is no concern. The reverse strand on the other hand, has a large number of titles with low phred quality score. This may be attributed by the low quality reads which are common in reverse strands.  
 
 ### Per Base Sequence content  
 Demonstrates the proportion of each of the four DNA bases been called for each base position in a sample file.  
