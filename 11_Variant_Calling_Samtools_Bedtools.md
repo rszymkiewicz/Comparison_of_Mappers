@@ -1,6 +1,6 @@
 #### Return to *Variant Calling* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling.md).  
 
-# Variant Calling using *samtools* and *bedtools*  
+# Variant Calling using *samtools* and *bcftools*  
 
 ## samtools and bcftools
 ***samtools*** is a bioinformatic suite tool which manipulates files in SAM format. A SAM file stands for *sequence alignment/map* and contains nucleotide sequence alignments. The samtools suite provides a variety of functionality including sorting, merging, indexing, and generating alignments per nucleotide position. In many instances, Unix pipes are utilized in the samtools commands in order to combine various suite features across the htslib group of tools. In this case we take the output provided from the samtools command and use it as input for the bcftools command. 
