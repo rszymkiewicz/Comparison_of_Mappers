@@ -1,3 +1,5 @@
+#### Return to *Data Comparison Overview* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md). 
+
 # Data Comparison using *vcftools* and *bedtools*  
 **Tabix Manual from htslib-1.31:** http://www.htslib.org/doc/tabix.html  
 Heng Li; Tabix: fast retrieval of sequence features from generic TAB-delimited files. Bioinformatics 2011; 27 (5): 718-719. doi: 10.1093/bioinformatics/btq671  
