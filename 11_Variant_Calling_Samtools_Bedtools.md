@@ -1,9 +1,6 @@
 #### Return to *Variant Calling* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_Variant_Calling.md).  
 
 # Variant Calling using *samtools* and *bedtools*  
-**samtools manual:** http://www.htslib.org/doc/samtools.html  
-**bcftools manual:** http://www.htslib.org/doc/bcftools.html  
-Li H A statistical framework for SNP calling, mutation discovery, association mapping and population genetical parameter estimation from sequencing data. Bioinformatics. 2011 Nov 1;27(21):2987-93. Epub 2011 Sep 8. [PMID: 21903627] 
 
 ## samtools and bcftools
 ***samtools*** is a bioinformatic suite tool which manipulates files in SAM format. A SAM file stands for *sequence alignment/map* and contains nucleotide sequence alignments. The samtools suite provides a variety of functionality including sorting, merging, indexing, and generating alignments per nucleotide position. In many instances, Unix pipes are utilized in the samtools commands in order to combine various suite features across the htslib group of tools. In this case we take the output provided from the samtools command and use it as input for the bcftools command. 
@@ -66,9 +63,15 @@ acgtn | ***mismatch to reference*** *reverse strand*.
 `*` | ***deletion from the reference***.  
 ^ | *indicates the ***start*** of a read.*  
 $ | *indicates the ***end*** of a read.*  
-^ **#** | *indicates the mapping quality in ASCII format.*  Note: must subtract 33 from this integer to obtain the true mapping quality.  
+^ **#** | *indicates the mapping quality in ASCII format.*  Note: must subtract 33 from this integer to obtain the true mapping quality. 
+
+# Manual and Citation
+**samtools manual:** http://www.htslib.org/doc/samtools.html  
+**bcftools manual:** http://www.htslib.org/doc/bcftools.html  
+Li H A statistical framework for SNP calling, mutation discovery, association mapping and population genetical parameter estimation from sequencing data. Bioinformatics. 2011 Nov 1;27(21):2987-93. Epub 2011 Sep 8. [PMID: 21903627] 
+
 # Python Script - Variant Calling samtools mpileup
 ## [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/samtoolsmpileup_Bowtie2.py)  
 ## [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/samtoolsmpileup_BWA_MEM.py)  
 
-## Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md).
+## Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison.md).  
