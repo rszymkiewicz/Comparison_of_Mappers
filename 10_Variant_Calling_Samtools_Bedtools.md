@@ -65,9 +65,8 @@ acgtn | ***mismatch to reference*** *reverse strand*.
 ^ | *indicates the ***start*** of a read.*  
 $ | *indicates the ***end*** of a read.*  
 ^ **#** | *indicates the mapping quality in ASCII format.*  Note: must subtract 33 from this integer to obtain the true mapping quality.  
-## samtools and bedtools Analysis - Sample P750
-
-
-# Python Script
+# Python Script - Variant Calling samtools mpileup
+## [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/samtoolsmpileup_Bowtie2.py)  
+## [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/samtoolsmpileup_BWA_MEM.py)  
 
 ## Lets investigate how we can compare our results from our two alignment tools (Bowtie2 and BWA) [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md).
