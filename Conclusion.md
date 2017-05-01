@@ -1,3 +1,5 @@
+#### Return to *Data Comparison using vcftools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/12_Comparison_vcftools_bedtools.md).  
+
 # Comparison of Mappers Tutorial Conclusion
 
 We have completed the variant calling and comparison of outputs for our two mapping tools, Bowtie2 and BWA.  
