@@ -79,6 +79,10 @@ Mapping of the 756,928 reads of the Sample P750 to the reference sequence using 
 ***Bowtie2 Sam Output***  
 The *sam file* for paired-end alignment has information for each strand of the pair on an individiual line. The first line represents the alignment for the forward strand whereas the second line represents the alignment of the reverse strand. The *sam file* has multiple fields however; the RNEXT and PNEXT fields contain information pertaining to the paired-end alignment specifically the reference name and position to which the other strand aligned to the reference sequence. 
 
+# Manual and Citation
+**Bowtie2 manual:** http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml  
+Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.  
+
 # Python Script - Bowtie2 Mapping
 ## [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Bowtie2.py)
 
