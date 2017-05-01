@@ -61,5 +61,6 @@ Nextera XT Library adapters were found within the sample therefore these adapter
 The reverse strand has low quality reads as seen within the *Per_base_sequence_quality* graphs. Trimming of low quality reads will need to be performed as well.  
 
 # Python Script - FastQC Inital Quality Check
+## [FastQC Before](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/FastQC_Before.py)
 
 ## Now that we have assessed our raw sample reads lets perform the appropriate trimming of our samples using [Trimmomatic](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).
