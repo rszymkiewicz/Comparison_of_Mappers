@@ -1,3 +1,5 @@
+#### Return to inital FastQC [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).  
+
 # Quality Preparations - Trimming of Adapters and Low Quality Sequences
 
 After assessing the inital quality of our sequencing samples we must take the appropriate steps to improve the quality of each sample to aid in sequence analysis. We will now quality trim our samples using a bioinformatic tool called ***Trimmomatic***.
