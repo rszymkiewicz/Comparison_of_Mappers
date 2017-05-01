@@ -1,3 +1,4 @@
+
 # General Information
 ## *What is PES?*
 PES stands for *Prairie Epidemic Strain* and is a *Pseudomonas aeruginosa* bacterial strain found within Canadian cystic fibrosis adult patients at the Calgary Adult Cystic Fibrosis Clinic (CACFC). 
@@ -24,5 +25,8 @@ sequencing. The purpose of utilizing a reference sequence in analysis versus *de
  - 165X Coverage 
  - 3 contigs were identified
  - 66.46% GC content
+
+## Tutorial - Following Sample P750  
+Throughout this tutorial we will be using one sample from the available 206 PES samples of our sample set. The selected sample we will use throughout this tutorial is Sample P750.  
 
 ## Now that we know a bit more about our sample set and reference sequence lets begin by assessing the quality of our Illumina sample sequences using [FastQC](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/3_Quality_Preparations_Inital_FastQC.md).
