@@ -19,7 +19,7 @@ Parameter | Description
 
 
 ### vcftools - *vcf-compare*  
-**vcf-compare** compares the positions of multiple vcf files. In our case we will be comparing the Bowtie2 vcf file output to the BWA vcf file output to see if the two mapper tools produced any differences in variant calling. The
+**vcf-compare** compares the positions of multiple vcf files. In our case we will be comparing the Bowtie2 vcf file output to the BWA vcf file output to see if the two mapper tools produced any differences in variant calling.
 ```
 vcf-compare [sample file in vcf format] [another sample in vcf format] > [output path]
 ```  
@@ -38,7 +38,7 @@ Parameter | Description
 -s | *flag indicating sample file in sam format.*
 
 ### bcftools - *plot-vcfstats*
-**plot-vcfstats** is a python script which takes the bcftools stats output and creates various plots in a graphical format.A pdf format of all plots is also created as output with this command.   
+**plot-vcfstats** is a python script which takes the bcftools stats output and creates various plots in a graphical format. A pdf format of all plots is also created as output with this command.   
 ```
 bcftools/plot-vcfstats -p [output folder name] [sample file from *bcftools stats* output file]
 ```  
@@ -57,7 +57,7 @@ Parameter | Description
 -b | *flag indicating the 2nd input sample file in vcf format to be compared.*  
 
 ##### File Output  
-The bedtools intersect tool outputs a vcf file of common genome features. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md).
+The bedtools intersect tool outputs a vcf file of common genome features. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bcftools.md).
 
 ### bedtools - *subtract*  
 **subtract** compares sample files in order to identify the genomic components which are unique. The second input sample file ('b') is compared to the 1st input sample file ('a') and all regions which overlap are disregarded and not reported. Only regions which remain from the 1st input sample file ('a') are reported as output.  
@@ -70,7 +70,7 @@ Parameter | Description
 -b | *flag indicating the 2nd input sample file in vcf format to be compared. The 2nd input sample file ('b') is used to identify unique features of the 1st input sample file ('a').*  
 
 ##### File Output 
-The bedtools intersect tool outputs a vcf file of unique genome features based on the base file provided in the -a parameter. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md).
+The bedtools intersect tool outputs a vcf file of unique genome features based on the base file provided in the -a parameter. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bcftools.md).
 
 # Analysis of Sample P750
 ### Output files for this page of the tutorial can be found in the following links:
