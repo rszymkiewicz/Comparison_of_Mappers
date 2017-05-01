@@ -18,9 +18,9 @@ Parameter | Description
 As previously explored in our initial FastQC assessment of our raw samples from our sample set, we focused on 3 specific areas of analysis; Basic Statistics, Per base sequence quality, and Adapter Content. Post-trimming we will look specifically at these 3 areas again for our Sample P750 however; we will also take into account any other areas which may have been flagged as unusual (red) and draw conclusions surrounding our trimming step. A total of 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content*. We will also assess these 3 areas of analysis and determine if we can proceed forward with our sample set.  
 
 ### Basic Statistics  
-pIt is important to verify no extreme results were obtained after trimming of our sample. 
+It is important to verify no extreme results were obtained after trimming of our sample. 
 ![Basic_Statistics_Post_Trimming_R1](https://cloud.githubusercontent.com/assets/25803304/25551963/e9075da0-2c5b-11e7-9f3b-1795c0309557.png)  
-![Basic_Statistics_Post_Trimming_R2](https://cloud.githubusercontent.com/assets/25803304/25551958/e8f63192-2c5b-11e7-92d7-461c728e9ce2.png)  
+![Basic_Statistics_Post_Trimming_R2](https://cloud.githubusercontent.com/assets/25803304/25551958/e8f63192-2c5b-11e7-92d7-461c728e9ce2.png)
 
 ***Analysis***  
 It is evident there will be a decrease in the number of reads in both our forward and reverse strand. For our P750 sample, the forward  and reverse strand lost a total 593,957 reads. Our sequence length range for each raw read has become a range of 36 to 151bp for both the forward and reverse strands. Post-trimming the %GC content for both forward and reverse strands was identified to be 65.  
@@ -66,5 +66,6 @@ Trimmomatic manual states that the **kmer content** will fail if the k-mer is im
 The Nextera XT DNA Library adapter sequences were successfully removed in trimming and low quality reads were also removed in trimming. Although 3 of the 12 areas of analysis were marked as red (unusual), *per tile sequence quality*, *per base sequence content*, and *Kmer content* the warning threshold is deemed to be sensitive for these 3 categories as described within the FastQC manual. We will keep these warnings in mind throughout the remaining downstream analysis however; we will proceed forward in confidence with our trimmed P750 sample.  
 
 # Python Script - FastQC Quality Check Post Trimming
+## [FastQC After](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/FastQC_After.py)
 
 ## Now that we have confidence in our sample sequences we can continue moving forward with our analysis. Lets look further into performing [*mapping*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/6_Mapping.md) of our samples to our reference sequence.   
