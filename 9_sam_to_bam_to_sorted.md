@@ -32,4 +32,8 @@ rm -rf [sam_file]
 ```
 samtools sort [bam_file] + [sorted_bam_file_prefix]
 ```  
+# Manual and Citation
+**samtools manual:** http://www.htslib.org/doc/samtools.html  
+Li H.*, Handsaker B.*, Wysoker A., Fennell T., Ruan J., Homer N., Marth G., Abecasis G., Durbin R. and 1000 Genome Project Data Processing Subgroup (2009) The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics, 25, 2078-9. [PMID: 19505943]  
+
 ## We have completed alignment of our samples to our reference sequence. Lets continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling.md).
