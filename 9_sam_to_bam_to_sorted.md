@@ -1,3 +1,4 @@
+#### Return to *BWA Mapping* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md).  
 # Mapping Output - Creating a sorted bam file
 
 The ***sam*** file output which was created from each of the two mapping software tools [Bowtie2](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/7_Mapping_Bowtie2.md) and [BWA](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/8_Mapping_BWA.md) is a human readable output file however; it is quite large in size. Therefore in order to reduce the amount of memory being used by the computer, we can convert the *sam file* to its binary file counterpart known as a ***bam*** file. Once a *bam* file is created it can also be sorted by alignment position. A ***sorted bam*** file is an important aspect which will be used for downstream analysis such as variant calling.  
