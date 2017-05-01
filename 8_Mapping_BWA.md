@@ -58,4 +58,4 @@ Li H. (2013) Aligning sequence reads, clone sequences and assembly contigs with 
 # Python Script - Mapping with BWA
 ## [BWA-MEM](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/BWA_MEM.py)
 
-## Now that we have completed alignment of our samples to our reference sequence, let us continue and assess the possible SNPs and indels which maybe present within our sample set in comparison to our reference sequence. To do this lets learn about [*variant calling*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling.md).   
+## Now that we have completed mapping and obtained output files in *sam* file format, let convert the *sam* file format into [*other useful file formats*](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/9_sam_to_bam_to_sorted.md).   
