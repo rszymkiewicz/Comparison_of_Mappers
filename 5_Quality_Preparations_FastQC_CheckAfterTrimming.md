@@ -1,4 +1,4 @@
-#### Return to trimming of raw reads using Trimmomatic by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).  
+#### Return to *trimming of raw reads using Trimmomatic* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/4_Quality_Preparations_Trimmomatic.md).  
 
 # Quality Preparations - FastQC Quality Check After Trimming
 Upon the completion of adapter and quality trimming of raw sequence reads it is important to verify trimming was not only successful but accurate in its performance. In some instances, trimming may not have resulted in the desired resultant. By utilizing FastQC software program one is able to confirm the success or further quality preparations required prior to continuing with sequence analysis. A python script to perform post trimming sequence quality check for the entire data set can be found at the bottom of the page. We will continue to follow our P750 sample and assess the success of our previous trimming step using trimmomatic below.  
