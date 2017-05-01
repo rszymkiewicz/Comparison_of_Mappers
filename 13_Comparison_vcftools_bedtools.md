@@ -1,16 +1,6 @@
 #### Return to *Data Comparison Overview* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Comparison.md). 
 
 # Data Comparison using *vcftools* and *bedtools*  
-**Tabix Manual from htslib-1.31:** http://www.htslib.org/doc/tabix.html  
-Heng Li; Tabix: fast retrieval of sequence features from generic TAB-delimited files. Bioinformatics 2011; 27 (5): 718-719. doi: 10.1093/bioinformatics/btq671  
-
-**vcf-compare perl module:** https://vcftools.github.io/perl_module.html#vcf-compare  
-The Variant Call Format and VCFtools, Petr Danecek, Adam Auton, Goncalo Abecasis, Cornelis A. Albers, Eric Banks, Mark A. DePristo, Robert Handsaker, Gerton Lunter, Gabor Marth, Stephen T. Sherry, Gilean McVean, Richard Durbin and 1000 Genomes Project Analysis Group, Bioinformatics, 2011 http://dx.doi.org/10.1093/bioinformatics/btr330  
-
-**bedtools intersect manual:** http://bedtools.readthedocs.io/en/latest/content/tools/intersect.html  
-**bedtools subtract manual:** http://bedtools.readthedocs.io/en/latest/content/tools/subtract.html  
-Quinlan AR and Hall IM, 2010. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 26, 6, pp. 841–842.  
-
 A variety of tools are available to assist in downstream analysis of Illumina sequencing samples. For our purposes, we will be using 3 bioinformatic suite tools, samtools, vcftools, bedtools, and bcftools. Each bioinformatic tool has numerous commands available to assist in the manipulation of file outputs supporting the abundant information that can be obtained through genotyping.  
 
 Our comparison of mapper tools (Bowtie2 and BWA) will begin with samtools using the tabix command to create a tab-deliminated genome position file. We will use the compare command of vcftools to output a venn diagram of the unqiue and similar results obtained from the two mapping tools. The stats command within the bcftools suite will produce various statistical information in a graphical format such as. Finally bedtools intersect and subtract commands will be used as another mechanism to identify overlaps and unqiue features when comparing the two mapping tools used in this tutorial. 
@@ -83,7 +73,12 @@ Parameter | Description
 The bedtools intersect tool outputs a vcf file of unique genome features based on the base file provided in the -a parameter. To review the description of a VCF file we can return to our [previous tutorial page](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/10_Variant_Calling_Samtools_Bedtools.md).
 
 # Analysis of Sample P750
-### Output files for this page of the tutorial can be found [here]()
+### Output files for this page of the tutorial can be found in the following links:
+[vcf-compare](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/P750.compared)  
+[bedtools intersect](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Bedtools_Intersect_COMMON_B2_BWA.vcf)  
+[bedtools subtract (Bowtie2 unique)](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Unique_B2.vcf)  
+[bedtools subtract (BWA unique)](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/Unique_BWA.vcf)  
+
 ***vcf-compare***  
 ```
 VN	14	Sample_P750_BWA.vcf.gz (15.4%)
@@ -109,6 +104,17 @@ A total of 78 regions were common between the two files.
 ***bcftools subtract*** 
 A total of 14 regions were unique to BWA mapping consisting of 8 SNPs and 6 indels.  
 A total of 27 regions were unique to Bowtie2 mapping consisting of 18 SNPs and 9 indels.   
+
+## Manuals and Citation
+**Tabix Manual from htslib-1.31:** http://www.htslib.org/doc/tabix.html  
+Heng Li; Tabix: fast retrieval of sequence features from generic TAB-delimited files. Bioinformatics 2011; 27 (5): 718-719. doi: 10.1093/bioinformatics/btq671  
+
+**vcf-compare perl module:** https://vcftools.github.io/perl_module.html#vcf-compare  
+The Variant Call Format and VCFtools, Petr Danecek, Adam Auton, Goncalo Abecasis, Cornelis A. Albers, Eric Banks, Mark A. DePristo, Robert Handsaker, Gerton Lunter, Gabor Marth, Stephen T. Sherry, Gilean McVean, Richard Durbin and 1000 Genomes Project Analysis Group, Bioinformatics, 2011 http://dx.doi.org/10.1093/bioinformatics/btr330  
+
+**bedtools intersect manual:** http://bedtools.readthedocs.io/en/latest/content/tools/intersect.html  
+**bedtools subtract manual:** http://bedtools.readthedocs.io/en/latest/content/tools/subtract.html  
+Quinlan AR and Hall IM, 2010. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 26, 6, pp. 841–842. 
 
 # Python Script - Variant Calling Comparison of Bowtie2 and BWA-MEM
 ## [Compare Variant Calling](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/CompareVariantCalling.py)  
