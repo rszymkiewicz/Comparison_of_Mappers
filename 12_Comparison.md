@@ -1,4 +1,4 @@
-#### Return to *Variant Calling using samtools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bedtools.md).  
+#### Return to *Variant Calling using samtools and bedtools* by clicking [here](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/11_Variant_Calling_Samtools_Bcftools.md).  
 
 # Data Comparison  
 
