@@ -107,6 +107,7 @@ A total of 78 regions were common between the two files.
 A total of 14 regions were unique to BWA mapping consisting of 8 SNPs and 6 indels.  
 A total of 27 regions were unique to Bowtie2 mapping consisting of 18 SNPs and 9 indels.  
 
-# Output files for this page of the tutorial can be found [here] 
+# Output files for this page of the tutorial can be found [here]() 
 
-# Python Script  
+# Python Script - Variant Calling Comparison of Bowtie2 and BWA-MEM
+## [Compare Variant Calling](https://github.com/rszymkiewicz/Comparison_of_Mappers/blob/master/CompareVariantCalling.py)  
