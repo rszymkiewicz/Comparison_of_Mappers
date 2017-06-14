@@ -30,7 +30,7 @@ rm -rf [sam_file]
 **samtools sort** sorts alignments based on their alignment position. The second parameter within the samtools sort command represents the prefix name of the output file to be created and the *.bam* extention is added to the end of the prefix defined by the user in the command.  
 
 ```
-samtools sort [bam_file] + [sorted_bam_file_prefix]
+samtools sort --threads # [bam_file] -o [sorted_bam_file_prefix]
 ```  
 # Manual and Citation
 **samtools manual:** http://www.htslib.org/doc/samtools.html  
